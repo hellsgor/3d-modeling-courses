@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Lagoona - сеть отелей</title>
 </head>
 <body>
@@ -59,7 +59,43 @@
     </div>
   </div>
 </header>
-<section class="special-offers" id="special-offers"></section>
+<section class="special-offers" id="special-offers">
+  <h2 class="section__title">Спецпредложения</h2>
+  <ul class="special-offers__special-offers-list">
+    <!--     в этом блоке нет ясности: ссылкой является весь элемент или только текст "Подробнее".
+    Я бы делал весь элемент ссылкой, так и реализовал -->
+    <li class="special-offer">
+      <a href="#" class="special-offer__link">
+        <div class="special-offer__image-container">
+          <img src="./img/spec-offer-1.png" alt="Изображение предложения 1"
+               class="special-offer__image">
+          <div class="special-offer__gradient"></div>
+        </div>
+
+      </a>
+    </li>
+    <li class="special-offer">
+      <a href="#" class="special-offer__link">
+        <div class="special-offer__image-container">
+
+        </div>
+        <img src="./img/spec-offer-2.png" alt="Изображение предложения 2"
+             class="special-offer__image">
+        <div class="special-offer__gradient"></div>
+      </a>
+    </li>
+    <li class="special-offer">
+      <a href="#" class="special-offer__link">
+        <div class="special-offer__image-container">
+
+        </div>
+        <img src="./img/spec-offer-3.png" alt="Изображение предложения 3"
+             class="special-offer__image">
+        <div class="special-offer__gradient"></div>
+      </a>
+    </li>
+  </ul>
+</section>
 <section class="about-us" id="about-us"></section>
 <section class="services" id="services"></section>
 <section class="advantage" id="advantage"></section>
