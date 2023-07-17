@@ -24,7 +24,7 @@
   </div>
   <div class="header__bottom-row">
     <nav class="main-menu">
-      <ul class="main-menu__list">
+      <ul class="main-menu__list ul-reset">
         <li class="main-menu__item">
           <a class="main-menu__item-link" href="#about-us">
             О нас
@@ -61,15 +61,16 @@
 </header>
 <main class="main">
   <section class="special-offers main__section" id="special-offers">
-    <h2 class="section__title">Спецпредложения</h2>
-    <ul class="special-offers__special-offers-list">
+    <h2 class="section__title special-offers__title">Спецпредложения</h2>
+    <ul class="special-offers__special-offers-list ul-reset">
       <li class="special-offers__special-offer special-offer special-offer_1">
         <h3 class="special-offer__title">Мальдивские острова</h3>
         <p class="special-offer__price">
           <!--         позже реализовал бы с помощью псевдоэлементов before и after -->
           от&nbsp;55&nbsp;000&nbsp;₽
         </p>
-        <a href="#" class="special-offer__link card-link">Подробнее</a>
+        <a href="#"
+           class="special-offer__link card-link card-link_small card-link_with-background">Подробнее</a>
       </li>
       <li class="special-offers__special-offer special-offer special-offer_2">
         <h3 class="special-offer__title">Горящий тур на&nbsp;остров Крит</h3>
@@ -77,7 +78,8 @@
           <!--         позже реализовал бы с помощью псевдоэлементов before и after -->
           от&nbsp;30&nbsp;000&nbsp;₽
         </p>
-        <a href="#" class="special-offer__link card-link">Подробнее</a>
+        <a href="#"
+           class="special-offer__link card-link card-link_small card-link_with-background">Подробнее</a>
       </li>
       <li class="special-offers__special-offer special-offer special-offer_3">
         <h3 class="special-offer__title">Номера категории люкс</h3>
@@ -85,13 +87,14 @@
           <!--         позже реализовал бы с помощью псевдоэлементов before и after -->
           от&nbsp;5&nbsp;000&nbsp;₽
         </p>
-        <a href="#" class="special-offer__link card-link">Подробнее</a>
+        <a href="#"
+           class="special-offer__link card-link card-link_small card-link_with-background">Подробнее</a>
       </li>
     </ul>
   </section>
   <section class="about-us main__section" id="about-us">
-    <h2 class="section__title">О&nbsp;нас</h2>
-    <p>
+    <h2 class="section__title about-us__title">О&nbsp;нас</h2>
+    <p class="text about-us__text">
       Идейные соображения высшего порядка, а&nbsp;также сложившаяся структура
       организации влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации
       системы обучения кадров, соответствует насущным потребностям. Идейные
@@ -104,8 +107,52 @@
     </p>
   </section>
   <section class="services main__section" id="services">
-    <h2 class="section__title">Услуги</h2>
-
+    <h2 class="section__title services__title">Услуги</h2>
+    <ul class="services__services-list ul-reset">
+      <li
+        class="services__services-list-item service-card service-card_exclusive-service">
+        <a href="#"
+           class="service-card__link card-link card-link_big card-link_without-background">
+          Эксклюзивное обслуживание
+        </a>
+        <p class="service__description text">
+          Равным образом постоянный количественный рост и&nbsp;сфера нашей
+          активности
+        </p>
+      </li>
+      <li
+        class="services__services-list-item service-card service-card_banquet-halls-rent">
+        <a href="#"
+           class="service-card__link card-link card-link_big card-link_without-background">
+          Аренда банкетных залов
+        </a>
+        <p class="service__description text">
+          Значимость этих проблем настолько очевидна, что дальнейшее развитие
+          различных форм
+        </p>
+      </li>
+      <li class="services__services-list-item service-card service-card_spa">
+        <a href="#"
+           class="service-card__link card-link card-link_big card-link_without-background">
+          Сауны, бассейны, бани, фитнес-залы
+        </a>
+        <p class="service__description text">
+          Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
+          позиции
+        </p>
+      </li>
+      <li
+        class="services__services-list-item service-card service-card_car-parks">
+        <a href="#"
+           class="service-card__link card-link card-link_big card-link_without-background">
+          Охраняемые автомобильные стоянки
+        </a>
+        <p class="service__description text">
+          Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию
+          позиции
+        </p>
+      </li>
+    </ul>
   </section>
   <section class="advantage main__section" id="advantage"></section>
   <section class="placement main__section" id="placement"></section>
