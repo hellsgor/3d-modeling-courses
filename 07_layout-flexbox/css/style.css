@@ -43,6 +43,15 @@ body {
   padding-top: 70px;
 }
 
+.main__section {
+  margin-bottom: 70px;
+}
+
+.section__title {
+  margin: 0 0 20px 40px;
+  padding: 0;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
@@ -92,3 +101,46 @@ body {
 .header__buttons .btn:not(:last-child) {
   margin-right: 40px;
 }
+
+/* special-offer */
+.special-offers__container {
+  width: 100%;
+}
+
+.special-offers__column {
+  width: 50%;
+}
+
+.special-offers__column:not(:nth-child(2n)) {
+  margin-right: 24px;
+}
+
+.special-offer {
+  outline: 1px dotted coral;
+
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 45px;
+}
+
+.special-offer:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.special-offer__title {
+  margin: 0 0 15px 0;
+}
+
+.special-offer__price {
+  margin: 0 0 47px 0;
+}
+
+.special-offer_small {
+  min-height: 258px;
+}
+
+.special-offer_big {
+  min-height: 540px;
+}
+
+
