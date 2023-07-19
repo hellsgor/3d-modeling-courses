@@ -143,4 +143,9 @@ body {
   min-height: 540px;
 }
 
+/* about-us */
+.about-us__text {
+  max-width: 75%;
+}
+
 
