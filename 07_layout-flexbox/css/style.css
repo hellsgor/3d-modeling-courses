@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'font', sans-serif;
+}
+
+/* glob */
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.main {
+  padding-top: 70px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+/* buttons */
+/*.btn_small {*/
+/*  padding: 13px 20px;*/
+/*}*/
+
+/*.btn_big {*/
+/*  padding: 30px;*/
+/*}*/
+
+/* header */
+.header {
+  padding-top: 30px;
+}
+
+.header__top-row {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header__logo {
+  margin-right: 40px;
+  font-size: 0;
+}
+
+.header__phone-number {
+  margin-right: auto;
+}
+
+.header__bottom-row {
+  padding: 14px 45px;
+  align-items: center;
+}
+
+.header__main-menu {
+  margin-right: auto;
+}
+
+.main-menu__item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header__buttons .btn:not(:last-child) {
+  margin-right: 40px;
+}
