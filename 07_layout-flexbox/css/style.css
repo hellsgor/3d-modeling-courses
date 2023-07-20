@@ -57,14 +57,15 @@ body {
   transform: scale(0);
 }
 
-/* buttons */
-/*.btn_small {*/
-/*  padding: 13px 20px;*/
-/*}*/
+/*buttons*/
+.btn {
+  min-width: 108px;
+  padding: 13px 20px;
+}
 
-/*.btn_big {*/
-/*  padding: 30px;*/
-/*}*/
+.btn_big {
+  padding: 30px;
+}
 
 /* header */
 .header {
