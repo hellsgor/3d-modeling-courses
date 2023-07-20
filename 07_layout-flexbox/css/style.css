@@ -75,6 +75,7 @@ p {
   padding: 30px;
 }
 
+
 /* header */
 .header {
   padding-top: 30px;
@@ -95,6 +96,8 @@ p {
 }
 
 .header__bottom-row {
+  outline: 1px dotted coral;
+
   padding: 14px 45px;
   align-items: center;
 }
@@ -112,10 +115,6 @@ p {
 }
 
 /* special-offer */
-.special-offers__container {
-  width: 100%;
-}
-
 .special-offers__column {
   width: 50%;
 }
@@ -155,6 +154,51 @@ p {
 /* about-us */
 .about-us__text {
   max-width: 75%;
+  /*line-height: 200%;*/
 }
 
 
+/* services */
+.services__services-list {
+  flex-wrap: wrap;
+}
+
+.services__services-list-item {
+  outline: 1px dotted coral;
+
+  width: 573px;
+  padding: 191px 120px 35px 45px;
+}
+
+.services__services-list-item:nth-child(odd) {
+  margin-right: 24px;
+}
+
+.services__services-list-item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 24px;
+}
+
+/*.service-card__title,*/
+/*.service__description {*/
+/*  line-height: 200%;*/
+/*}*/
+
+/* advantage */
+.advantage__list {
+  flex-wrap: wrap;
+}
+
+.advantage-card {
+  outline: 1px dotted coral;
+
+  width: 276px;
+  padding: 116px 42px 32px 45px;
+}
+
+.advantage-card:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+.advantage-card:not(:nth-last-child(-n + 4)) {
+  margin-bottom: 22px;
+}
