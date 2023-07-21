@@ -244,3 +244,13 @@ p {
   justify-content: flex-end;
   align-items: center;
 }
+
+/* прижать ссылку к низу карточки можно двумя способами,
+мне больше нравится через флекс -
+таким образом нам вообще не нужно будет
+использовать класс accommodation__last-card-link */
+
+/*.accommodation__last-card-link {*/
+/*  display: block;*/
+/*  margin: auto auto 0;*/
+/*}*/
