@@ -2,10 +2,10 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <meta content="width=device-width, initial-scale=1.0"
+    name="viewport">
+  <link href="./css/normalize.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
   <title>Lagoona - сеть отелей</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
   <div class="container">
     <div class="header__top-row flex">
       <a class="header__logo">
-        <img src="./img/logo.svg" alt="Логотип сети отелей Lagoona">
+        <img alt="Логотип сети отелей Lagoona" src="./img/logo.svg">
       </a>
 
       <a class="header__phone-number" href="tel:+74953225448">
@@ -77,20 +77,21 @@
   <h1 class="visually-hidden">Lagoona - сеть отелей</h1>
   <section class="section special-offers main__section" id="special-offers">
     <div class="container">
-      <h2 class="section__title special-offers__title">Спецпредложения</h2>
+      <h2 class="section__title special-offers__title heading-2">Спецпредложения</h2>
       <div class="special-offers__container flex">
-        <div class="special-offers__column">
+        <div class="special-offers__column flex">
           <div
             class="special-offer special-offer_maldives flex">
             <div class="special-offer__content">
-              <h3 class="special-offer__title">Мальдивские острова</h3>
+              <h3 class="special-offer__title heading-3">Мальдивские острова</h3>
               <p class="special-offer__price">
-                <!--         позже реализовал бы с помощью псевдоэлементов before и after -->
-                от&nbsp;55&nbsp;000&nbsp;₽
+                <span class="special-offer__from">от</span>
+                <span class="special-offer__cost">55&nbsp;000</span>
+                <span class="special-offer__currency">₽</span>
               </p>
             </div>
-            <a href="#"
-              class="special-offer__link card-link card-link_small card-link_with-background">
+            <a class="special-offer__link card-link"
+              href="#">
               Подробнее
             </a>
           </div>
@@ -98,32 +99,34 @@
           <div
             class="special-offer special-offer_hot-tour flex">
             <div class="special-offer__content">
-              <h3 class="special-offer__title">Горящий тур на&nbsp;остров
+              <h3 class="special-offer__title heading-3">Горящий<br> тур на&nbsp;остров
                 Крит</h3>
               <p class="special-offer__price">
-                <!--         позже реализовал бы с помощью псевдоэлементов before и after -->
-                от&nbsp;30&nbsp;000&nbsp;₽
+                <span class="special-offer__from">от</span>
+                <span class="special-offer__cost">30&nbsp;000</span>
+                <span class="special-offer__currency">₽</span>
               </p>
             </div>
-            <a href="#"
-              class="special-offer__link card-link card-link_small card-link_with-background">
+            <a class="special-offer__link card-link"
+              href="#">
               Подробнее
             </a>
           </div>
         </div>
 
-        <div class="special-offers__column">
+        <div class="special-offers__column flex">
           <div
             class="special-offer special-offer_big special-offer_luxury flex">
             <div class="special-offer__content">
-              <h3 class="special-offer__title">Номера категории люкс</h3>
+              <h3 class="special-offer__title heading-3">Номера категории люкс</h3>
               <p class="special-offer__price">
-                <!--         позже реализовал бы с помощью псевдоэлементов before и after -->
-                от&nbsp;5&nbsp;000&nbsp;₽
+                <span class="special-offer__from">от</span>
+                <span class="special-offer__cost">5&nbsp;000</span>
+                <span class="special-offer__currency">₽</span>
               </p>
             </div>
-            <a href="#"
-              class="special-offer__link card-link card-link_small card-link_with-background">
+            <a class="special-offer__link card-link"
+              href="#">
               Подробнее
             </a>
           </div>
@@ -154,8 +157,8 @@
         <li
           class="services__services-list-item service-card service-card_exclusive-service">
           <h3 class="service-card__title">
-            <a href="#"
-              class="service-card__link card-link card-link_big card-link_without-background">
+            <a class="service-card__link card-link card-link_big card-link_without-background"
+              href="#">
               Эксклюзивное обслуживание
             </a>
           </h3>
@@ -167,8 +170,8 @@
         <li
           class="services__services-list-item service-card service-card_halls-rent">
           <h3 class="service-card__title">
-            <a href="#"
-              class="service-card__link card-link card-link_big card-link_without-background">
+            <a class="service-card__link card-link card-link_big card-link_without-background"
+              href="#">
               Аренда банкетных залов
             </a>
           </h3>
@@ -179,8 +182,8 @@
         </li>
         <li class="services__services-list-item service-card service-card_spa">
           <h3 class="service-card__title">
-            <a href="#"
-              class="service-card__link card-link card-link_big card-link_without-background">
+            <a class="service-card__link card-link card-link_big card-link_without-background"
+              href="#">
               Сауны, бассейны, бани, фитнес-залы
             </a>
           </h3>
@@ -192,8 +195,8 @@
         <li
           class="services__services-list-item service-card service-card_car-parks">
           <h3 class="service-card__title">
-            <a href="#"
-              class="service-card__link card-link card-link_big card-link_without-background">
+            <a class="service-card__link card-link card-link_big card-link_without-background"
+              href="#">
               Охраняемые автомобильные стоянки
             </a>
           </h3>
@@ -265,8 +268,8 @@
       <ul class="accommodation__list list-reset flex">
         <li class="accommodation__list-item">
           <article class="hotel-card">
-            <img src="./img/01_lagoona-española.jpg" alt="Фото Lagoona española"
-              class="hotel-card__image">
+            <img alt="Фото Lagoona española" class="hotel-card__image"
+              src="./img/01_lagoona-española.jpg">
             <div class="hotel-card__content">
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
@@ -277,11 +280,11 @@
                   <span>/ ночь</span>
                 </p>
                 <div class="hotel-card__rate">
-                  <img src="./img/rate-star.svg" alt="Рейтинг отеля 3 из 5">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
+                  <img alt="Рейтинг отеля 3 из 5" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
                 </div>
               </div>
               <h3 class="hotel-card__name" lang="es-ES">Lagoona
@@ -297,8 +300,8 @@
 
         <li class="accommodation__list-item">
           <article class="hotel-card">
-            <img src="./img/02_lagoona-son-típicas.jpg"
-              alt="Фото Lagoona son típicas" class="hotel-card__image">
+            <img alt="Фото Lagoona son típicas"
+              class="hotel-card__image" src="./img/02_lagoona-son-típicas.jpg">
             <div class="hotel-card__content">
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
@@ -309,11 +312,11 @@
                   <span>/ ночь</span>
                 </p>
                 <div class="hotel-card__rate">
-                  <img src="./img/rate-star.svg" alt="Рейтинг отеля 3 из 5">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
+                  <img alt="Рейтинг отеля 3 из 5" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
                 </div>
               </div>
               <h3 class="hotel-card__name" lang="es-ES">Lagoona son
@@ -329,8 +332,8 @@
 
         <li class="accommodation__list-item">
           <article class="hotel-card">
-            <img src="./img/03_lagoona-de-la-guerra.jpg"
-              alt="Фото Lagoona de la guerra" class="hotel-card__image">
+            <img alt="Фото Lagoona de la guerra"
+              class="hotel-card__image" src="./img/03_lagoona-de-la-guerra.jpg">
             <div class="hotel-card__content">
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
@@ -341,11 +344,11 @@
                   <span>/ ночь</span>
                 </p>
                 <div class="hotel-card__rate">
-                  <img src="./img/rate-star.svg" alt="Рейтинг отеля 3 из 5">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
+                  <img alt="Рейтинг отеля 3 из 5" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
                 </div>
               </div>
               <h3 class="hotel-card__name" lang="es-ES">Lagoona de la
@@ -361,9 +364,9 @@
 
         <li class="accommodation__list-item">
           <article class="hotel-card">
-            <img src="./img/04_lagoona-mentira-piadosa.jpg"
-              alt="Фото Lagoona mentira piadosa"
-              class="hotel-card__image">
+            <img alt="Фото Lagoona mentira piadosa"
+              class="hotel-card__image"
+              src="./img/04_lagoona-mentira-piadosa.jpg">
             <div class="hotel-card__content">
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
@@ -374,11 +377,11 @@
                   <span>/ ночь</span>
                 </p>
                 <div class="hotel-card__rate">
-                  <img src="./img/rate-star.svg" alt="Рейтинг отеля 3 из 5">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
+                  <img alt="Рейтинг отеля 3 из 5" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
                 </div>
               </div>
               <h3 class="hotel-card__name" lang="es-ES">Lagoona mentira
@@ -394,9 +397,9 @@
 
         <li class="accommodation__list-item">
           <article class="hotel-card">
-            <img src="./img/05_lagoona-empujar-la-creatividad.jpg"
-              alt="Фото Lagoona empujar la creatividad"
-              class="hotel-card__image">
+            <img alt="Фото Lagoona empujar la creatividad"
+              class="hotel-card__image"
+              src="./img/05_lagoona-empujar-la-creatividad.jpg">
             <div class="hotel-card__content">
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
@@ -407,11 +410,11 @@
                   <span>/ ночь</span>
                 </p>
                 <div class="hotel-card__rate">
-                  <img src="./img/rate-star.svg" alt="Рейтинг отеля 3 из 5">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
+                  <img alt="Рейтинг отеля 3 из 5" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
                 </div>
               </div>
               <h3 class="hotel-card__name" lang="es-ES">Lagoona empujar la
@@ -427,8 +430,8 @@
 
         <li class="accommodation__list-item">
           <article class="hotel-card">
-            <img src="./img/06_lagoona-el-retorno.jpg"
-              alt="Фото Lagoona el retorno" class="hotel-card__image">
+            <img alt="Фото Lagoona el retorno"
+              class="hotel-card__image" src="./img/06_lagoona-el-retorno.jpg">
             <div class="hotel-card__content">
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
@@ -439,11 +442,11 @@
                   <span>/ ночь</span>
                 </p>
                 <div class="hotel-card__rate">
-                  <img src="./img/rate-star.svg" alt="Рейтинг отеля 3 из 5">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
+                  <img alt="Рейтинг отеля 3 из 5" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
                 </div>
               </div>
               <h3 class="hotel-card__name" lang="es-ES">Lagoona el
@@ -459,9 +462,9 @@
 
         <li class="accommodation__list-item">
           <article class="hotel-card">
-            <img src="./img/07_lagoona-mentira-piadosa.jpg"
-              alt="Фото Lagoona mentira piadosa"
-              class="hotel-card__image">
+            <img alt="Фото Lagoona mentira piadosa"
+              class="hotel-card__image"
+              src="./img/07_lagoona-mentira-piadosa.jpg">
             <div class="hotel-card__content">
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
@@ -472,11 +475,11 @@
                   <span>/ ночь</span>
                 </p>
                 <div class="hotel-card__rate">
-                  <img src="./img/rate-star.svg" alt="Рейтинг отеля 3 из 5">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
+                  <img alt="Рейтинг отеля 3 из 5" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
                 </div>
               </div>
               <h3 class="hotel-card__name" lang="es-ES">Lagoona mentira
@@ -492,9 +495,9 @@
 
         <li class="accommodation__list-item">
           <article class="hotel-card">
-            <img src="./img/08_lagoona-suerte-siguió-siempre.jpg"
-              alt="Фото Lagoona suerte siguió siempre"
-              class="hotel-card__image">
+            <img alt="Фото Lagoona suerte siguió siempre"
+              class="hotel-card__image"
+              src="./img/08_lagoona-suerte-siguió-siempre.jpg">
             <div class="hotel-card__content">
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
@@ -505,11 +508,11 @@
                   <span>/ ночь</span>
                 </p>
                 <div class="hotel-card__rate">
-                  <img src="./img/rate-star.svg" alt="Рейтинг отеля 3 из 5">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
-                  <img src="./img/rate-star-empty.svg" alt="">
+                  <img alt="Рейтинг отеля 3 из 5" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
+                  <img alt="" src="./img/rate-star-empty.svg">
                 </div>
               </div>
               <h3 class="hotel-card__name" lang="es-ES">
@@ -526,8 +529,8 @@
 
         <li
           class="accommodation__list-item accommodation__list-item_last hotel-card flex">
-          <a href="#"
-            class="accommodation__last-card-link card-link card-link_big card-link_with-background">Посмотреть все варианты</a>
+          <a class="accommodation__last-card-link card-link card-link_big"
+            href="#">Посмотреть все варианты</a>
         </li>
       </ul>
     </div>
