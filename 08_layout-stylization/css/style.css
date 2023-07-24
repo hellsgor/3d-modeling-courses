@@ -255,7 +255,6 @@ p {
 /* about-us */
 .about-us__text {
   max-width: 75%;
-  /*line-height: 200%;*/
 }
 
 
@@ -295,10 +294,6 @@ p {
 .service-card__title {
   font-size: 20px;
   font-weight: 500;
-  line-height: 200%;
-}
-
-.service__description {
   line-height: 200%;
 }
 
@@ -352,10 +347,6 @@ p {
 .advantage-card_swimming-pool {
   background: url("../img/advantages/8-swimming-pool.svg") no-repeat 45px 40px, #fff;
   background-size: 66px 66px, cover;
-}
-
-.advantage-card__text {
-  line-height: 200%;
 }
 
 /* accommodation */
@@ -427,8 +418,3 @@ p {
 мне больше нравится через флекс -
 таким образом нам вообще не нужно будет
 использовать класс accommodation__last-card-link */
-
-/*.accommodation__last-card-link {*/
-/*  display: block;*/
-/*  margin: auto auto 0;*/
-/*}*/
