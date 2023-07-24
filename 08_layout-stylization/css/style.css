@@ -208,17 +208,17 @@ p {
 }
 
 .special-offer_maldives {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%) no-repeat center, url("../img/spec-maldives.jpg") no-repeat center;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%) no-repeat center, url("../img/special-offers/spec-maldives.jpg") no-repeat center;
   background-size: contain, cover;
 }
 
 .special-offer_hot-tour {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%) no-repeat center, url("../img/spec-crete.jpg") no-repeat center;
+  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%) no-repeat center, url("../img/special-offers/spec-crete.jpg") no-repeat center;
   background-size: contain, cover;
 }
 
 .special-offer_luxury {
-  background: url("../img/spec-luxury.jpg") no-repeat center;
+  background: url("../img/special-offers/spec-luxury.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -269,22 +269,22 @@ p {
 }
 
 .service-card_exclusive-service {
-  background: url("../img/serv-exclusive-service.jpg") no-repeat center top, #ffffff;
+  background: url("../img/services/serv-exclusive-service.jpg") no-repeat center top, #ffffff;
   background-size: contain, cover;
 }
 
 .service-card_halls-rent {
-  background: url("../img/serv-halls-rent.jpg") no-repeat center top, #ffffff;
+  background: url("../img/services/serv-halls-rent.jpg") no-repeat center top, #ffffff;
   background-size: contain, cover;
 }
 
 .service-card_spa {
-  background: url("../img/serv-spa.jpg") no-repeat center top, #ffffff;
+  background: url("../img/services/serv-spa.jpg") no-repeat center top, #ffffff;
   background-size: contain, cover;
 }
 
 .service-card_car-parks {
-  background: url("../img/serv-car-parks.jpg") no-repeat center top, #ffffff;
+  background: url("../img/services/serv-car-parks.jpg") no-repeat center top, #ffffff;
   background-size: contain, cover;
 }
 
