@@ -301,21 +301,59 @@ p {
 /* advantage */
 .advantage__list {
   flex-wrap: wrap;
+  gap: 22px;
 }
 
 .advantage-card {
   width: 276px;
-
   padding: 116px 42px 32px 45px;
-  outline: 1px dotted coral;
+  border-radius: 15px;
 }
 
-.advantage-card:not(:nth-child(4n)) {
-  margin-right: 22px;
+.advantage-card_bath {
+  background: url("../img/advantages/1-bath.svg") no-repeat 45px 40px, #ffffff;
+  background-size: 66px 66px, cover;
 }
 
-.advantage-card:not(:nth-last-child(-n + 4)) {
-  margin-bottom: 22px;
+.advantage-card_hanger {
+  background: url("../img/advantages/2-hanger.svg") no-repeat 45px 40px, #ffffff;
+  background-size: 66px 66px, cover;
+}
+
+.advantage-card_heating {
+  background: url("../img/advantages/3-heating.svg") no-repeat 45px 40px, #ffffff;
+  background-size: 66px 66px, cover;
+}
+
+/* .......... */
+
+.advantage-card_hotel-key {
+  background: url("../img/advantages/4-hotel-key.svg") no-repeat 45px 40px, #ffffff;
+  background-size: 66px 66px, cover;
+}
+
+.advantage-card_parking {
+  background: url("../img/advantages/5-parking.svg") no-repeat 45px 40px, #ffffff;
+  background-size: 66px 66px, cover;
+}
+
+.advantage-card_reception {
+  background: url("../img/advantages/6-reception.svg") no-repeat 45px 40px, #ffffff;
+  background-size: 66px 66px, cover;
+}
+
+.advantage-card_safe {
+  background: url("../img/advantages/7-security-box.svg") no-repeat 45px 40px, #ffffff;
+  background-size: 66px 66px, cover;
+}
+
+.advantage-card_swimming-pool {
+  background: url("../img/advantages/8-swimming-pool.svg") no-repeat 45px 40px, #ffffff;
+  background-size: 66px 66px, cover;
+}
+
+.advantage-card__text {
+  line-height: 200%;
 }
 
 /* accommodation */
