@@ -104,7 +104,7 @@ p {
 
 /* card links */
 .card-link {
-  display: flex;
+  /* display: flex; */
   width: fit-content;
   padding-right: 16px;
   align-items: center;
@@ -259,27 +259,44 @@ p {
 /* services */
 .services__services-list {
   flex-wrap: wrap;
+  gap: 24px;
 }
 
-.services__services-list-item {
+.service-card {
   width: 573px;
-
   padding: 191px 120px 35px 45px;
-  outline: 1px dotted coral;
+  border-radius: 15px;
 }
 
-.services__services-list-item:nth-child(odd) {
-  margin-right: 24px;
+.service-card_exclusive-service {
+  background: url("../img/serv-exclusive-service.jpg") no-repeat center top, #ffffff;
+  background-size: contain, cover;
 }
 
-.services__services-list-item:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 24px;
+.service-card_halls-rent {
+  background: url("../img/serv-halls-rent.jpg") no-repeat center top, #ffffff;
+  background-size: contain, cover;
 }
 
-/*.service-card__title,*/
-/*.service__description {*/
-/*  line-height: 200%;*/
-/*}*/
+.service-card_spa {
+  background: url("../img/serv-spa.jpg") no-repeat center top, #ffffff;
+  background-size: contain, cover;
+}
+
+.service-card_car-parks {
+  background: url("../img/serv-car-parks.jpg") no-repeat center top, #ffffff;
+  background-size: contain, cover;
+}
+
+.service-card__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 200%;
+}
+
+.service__description {
+  line-height: 200%;
+}
 
 /* advantage */
 .advantage__list {
