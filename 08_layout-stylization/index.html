@@ -288,7 +288,7 @@
   </section>
   <section class="section accommodation main__section" id="accommodation">
     <div class="container">
-      <h2 class="section__title accommodation__title">Размещение</h2>
+      <h2 class="section__title accommodation__title heading-2">Размещение</h2>
       <ul class="accommodation__list list-reset flex">
         <li class="accommodation__list-item">
           <article class="hotel-card">
@@ -298,7 +298,7 @@
               <div class="hotel-card__content-top-row flex">
                 <p class="hotel-card__cost">
                   <!-- предполагаю, что span'ы без атрибута class будут вынесены в css как псевдоэлементы -->
-                  <span>от</span>
+                  <span class="hotel-card__from">от</span>
                   <span class="hotel-card__cost-value">4 698</span>
                   <span class="hotel-card__currency">₽</span>
                   <span>/ ночь</span>
@@ -396,7 +396,7 @@
                 <p class="hotel-card__cost">
                   <!-- предполагаю, что span'ы без атрибута class будут вынесены в css как псевдоэлементы -->
                   <span>от</span>
-                  <span class="hotel-card__cost-value"></span>
+                  <span class="hotel-card__cost-value">6 320</span>
                   <span class="hotel-card__currency">₽</span>
                   <span>/ ночь</span>
                 </p>
@@ -552,8 +552,8 @@
         </li>
 
         <li
-          class="accommodation__list-item accommodation__list-item_last hotel-card flex">
-          <a class="accommodation__last-card-link card-link"
+          class="accommodation__list-item hotel-card hotel-card_last flex">
+          <a class="hotel-card_last-link card-link"
             href="#">Посмотреть все варианты</a>
         </li>
       </ul>
