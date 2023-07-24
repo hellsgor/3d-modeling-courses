@@ -1,3 +1,5 @@
+@import url('./fonts.css');
+
 html {
   box-sizing: border-box;
 }
@@ -19,7 +21,9 @@ img {
 
 body {
   min-width: 1200px;
-  font-family: 'font', sans-serif;
+  font-family: 'Muller', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 h1,
