@@ -315,46 +315,42 @@ p {
   width: 276px;
   padding: 116px 42px 32px 45px;
   border-radius: 15px;
+  background-color: #fff;
+  background-position: 45px 40px;
+  background-repeat: no-repeat;
+  background-size: 66px;
 }
 
 .advantage-card_bath {
-  background: url("../img/advantages/1-bath.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/1-bath.svg")
 }
 
 .advantage-card_hanger {
-  background: url("../img/advantages/2-hanger.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/2-hanger.svg")
 }
 
 .advantage-card_heating {
-  background: url("../img/advantages/3-heating.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/3-heating.svg")
 }
 
 .advantage-card_hotel-key {
-  background: url("../img/advantages/4-hotel-key.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/4-hotel-key.svg")
 }
 
 .advantage-card_parking {
-  background: url("../img/advantages/5-parking.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/5-parking.svg")
 }
 
 .advantage-card_reception {
-  background: url("../img/advantages/6-reception.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/6-reception.svg")
 }
 
 .advantage-card_safe {
-  background: url("../img/advantages/7-security-box.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/7-security-box.svg")
 }
 
 .advantage-card_swimming-pool {
-  background: url("../img/advantages/8-swimming-pool.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/8-swimming-pool.svg")
 }
 
 /* accommodation */
