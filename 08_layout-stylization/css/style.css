@@ -387,7 +387,7 @@ p {
 
 .hotel-card_last {
   display: flex;
-  padding: 32px 45px;
+  padding: 27px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
@@ -395,10 +395,14 @@ p {
   background-size: cover;
 }
 
-.hotel-card_last-link {
+.hotel-card__card-link {
+  /* width: fit-content; */
+  padding-right: 16px;
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
+  background: url("../img/arrow-right-white.svg") no-repeat right;
+  background-size: 11px;
   color: #fff;
 }
 
