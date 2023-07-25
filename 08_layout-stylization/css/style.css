@@ -124,11 +124,18 @@ p {
 }
 
 .header__top-row-link {
-  padding-left: 29px;
-  background-image: url("../img/keyboard_tab.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+}
+
+.header__top-row-link span {
+  /* padding-top необходим для точного,
+  в соответствии с макетом,
+  выравнивания span относительно svg */
+  padding-top: 3px;
+  line-height: 100%;
   color: #c93;
 }
 
