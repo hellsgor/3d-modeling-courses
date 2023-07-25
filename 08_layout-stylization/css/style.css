@@ -264,7 +264,7 @@ h3 {
 .service-card {
   overflow: hidden;
   width: 573px;
-  padding: 191px 120px 35px 45px;
+  padding: 191px 45px 35px;
   border-radius: 15px;
   background-color: #fff;
   background-position: top;
@@ -299,6 +299,10 @@ h3 {
   align-items: center;
   column-gap: 6px;
   color: #c93;
+}
+
+.service__description {
+  max-width: 404px;
 }
 
 /* advantage */
