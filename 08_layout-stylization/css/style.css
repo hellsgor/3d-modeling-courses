@@ -276,26 +276,26 @@ p {
   width: 573px;
   padding: 191px 120px 35px 45px;
   border-radius: 15px;
+  background-color: #fff;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .service-card_exclusive-service {
-  background: url("../img/services/serv-exclusive-service.jpg") no-repeat center top, #fff;
-  background-size: contain, cover;
+  background-image: url("../img/services/serv-exclusive-service.jpg");
 }
 
 .service-card_halls-rent {
-  background: url("../img/services/serv-halls-rent.jpg") no-repeat center top, #fff;
-  background-size: contain, cover;
+  background-image: url("../img/services/serv-halls-rent.jpg");
 }
 
 .service-card_spa {
-  background: url("../img/services/serv-spa.jpg") no-repeat center top, #fff;
-  background-size: contain, cover;
+  background-image: url("../img/services/serv-spa.jpg");
 }
 
 .service-card_car-parks {
-  background: url("../img/services/serv-car-parks.jpg") no-repeat center top, #fff;
-  background-size: contain, cover;
+  background-image: url("../img/services/serv-car-parks.jpg");
 }
 
 .service-card__title {
