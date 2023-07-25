@@ -89,6 +89,7 @@ p {
   padding: 13px 20px;
   border: 1px solid #c93;
   border-radius: 10px;
+  line-height: 1;
   background-color: #fff;
   color: #c93;
   cursor: pointer;
