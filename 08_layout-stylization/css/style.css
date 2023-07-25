@@ -283,6 +283,13 @@ p {
   line-height: 200%;
 }
 
+.service-card__link {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  color: #c93;
+}
+
 /* advantage */
 .advantage__list {
   display: flex;
