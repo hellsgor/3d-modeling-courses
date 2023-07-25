@@ -414,7 +414,64 @@ p {
   border-bottom-color: #fff;
 }
 
-/* прижать ссылку к низу карточки можно двумя способами,
-мне больше нравится через флекс -
-таким образом нам вообще не нужно будет
-использовать класс accommodation__last-card-link */
+/* footer */
+.footer {
+  margin-bottom: 31px;
+}
+
+.footer__wrapper {
+  padding: 45px;
+  border-radius: 15px;
+  background: url("../img/footer-background-image.svg") no-repeat 739px bottom, #333;
+  background-size: 254px 228px, cover;
+}
+
+.footer__left-column {
+  max-width: 302px;
+  margin-right: 125px;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.footer__center-column {
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer__center-column a {
+  line-height: 21px;
+}
+
+.footer__paragraph {
+  font-style: normal;
+  line-height: 190%;
+  color: #fff;
+}
+
+.footer__link {
+  width: fit-content;
+  font-style: normal;
+  line-height: 150%;
+  color: #c93;
+}
+
+.footer__phones-numbers {
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.footer__emails {
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.footer__right-column {
+  margin-left: auto;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer__social-link {
+  width: 25px;
+  height: 25px;
+}
