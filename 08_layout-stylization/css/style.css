@@ -353,6 +353,10 @@ p {
   background-color: #fff;
 }
 
+.hotel-card__image {
+  display: block;
+}
+
 .hotel-card__content {
   padding: 32px 45px 45px;
 }
