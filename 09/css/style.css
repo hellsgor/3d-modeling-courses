@@ -20,7 +20,6 @@ img {
 }
 
 body {
-  min-width: 1200px;
   font-family: 'Muller', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -47,7 +46,8 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -71,8 +71,17 @@ p {
 }
 
 .paragraph {
+  font-style: normal;
   line-height: 200%;
   color: #000;
+}
+
+.paragraph_small {
+  line-height: 150%;
+}
+
+.paragraph_gray {
+  color: #999;
 }
 
 /* headings */
@@ -84,6 +93,7 @@ p {
 
 .heading-3 {
   font-weight: 700;
+  font-style: normal;
 }
 
 /*buttons*/
@@ -105,7 +115,6 @@ p {
 /* card links */
 .card-link {
   display: flex;
-  width: fit-content;
   /* padding-right: 1px; */
   align-items: center;
   column-gap: 1px;
@@ -131,6 +140,12 @@ p {
   transform: rotate(-45deg);
 }
 
+/* line links */
+.line-link {
+  font-style: normal;
+  line-height: 150%;
+  color: #c93;
+}
 
 /* header */
 .header {
@@ -414,6 +429,63 @@ p {
   border-bottom-color: #fff;
 }
 
+/* contacts */
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contacts__wrapper {
+  padding: 45px;
+  border-radius: 15px;
+  justify-content: space-between;
+  column-gap: 52px;
+  background-color: #fff;
+}
+
+.contacts__left-column {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__text-content {
+  width: 375px;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.contacts__text-content-item {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e9e9e9;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.contacts__item-group {
+  width: 229px;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.contacts__office-photo {
+  width: 100%;
+  max-width: 653px;
+  height: 528px;
+  font-size: 0;
+  /*   без font-size: 0 у <picture> появляется отступ снизу около 8px*/
+}
+
+.contacts__office-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contacts__route-btn {
+  max-width: 216px;
+}
+
 /* footer */
 .footer {
   margin-bottom: 31px;
@@ -446,13 +518,6 @@ p {
   font-style: normal;
   line-height: 190%;
   color: #fff;
-}
-
-.footer__link {
-  width: fit-content;
-  font-style: normal;
-  line-height: 150%;
-  color: #c93;
 }
 
 .footer__phones-numbers {

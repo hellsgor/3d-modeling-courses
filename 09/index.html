@@ -54,7 +54,7 @@
           </li>
 
           <li class="main-menu__item">
-            <a class="main-menu__item-link" href="#">
+            <a class="main-menu__item-link" href="#contacts">
               Контакты
             </a>
           </li>
@@ -560,7 +560,67 @@
     </div>
   </section>
   <!--   <section class="section want-tour main__section" id="want-tour"></section> -->
-  <!--   <section class="section contacts main__section" id="contacts"></section> -->
+  <section class="section contacts main__section" id="contacts">
+    <div class="container">
+      <h2 class="section__title contacts__title heading-2">Контакты</h2>
+      <div class="contacts__wrapper flex">
+        <div class="contacts__left-column flex">
+          <address class="contacts__text-content flex">
+            <div class="contacts__text-content-item flex">
+              <h3 class="heading-3">Адрес</h3>
+              <div class="contacts__item-group flex">
+                <p class="paragraph paragraph_small">
+                  Москва, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
+                </p>
+              </div>
+            </div>
+
+            <div class="contacts__text-content-item flex">
+              <h3 class="heading-3">Телефоны</h3>
+              <div class="contacts__item-group flex">
+                <a class="line-link" href="tel:+74995356434">+7&nbsp;499 535-64-34</a>
+                <a class="line-link" href="tel:+74950050544">+7&nbsp;495 005-05-44</a>
+              </div>
+            </div>
+
+            <div class="contacts__text-content-item flex">
+              <h3 class="heading-3">Email</h3>
+              <div class="contacts__item-group flex">
+                <div class="contacts__link-group">
+                  <a class="line-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+                  <p class="paragraph paragraph_small paragraph_gray">по&nbsp;вопросам бронирования</p>
+                </div>
+                <div class="contacts__link-group">
+                  <a class="line-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+                  <p class="paragraph paragraph_small paragraph_gray">по&nbsp;вопросам сотрудничества</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contacts__text-content-item flex">
+              <h3 class="heading-3">График</h3>
+              <div class="contacts__item-group flex">
+                <p class="paragraph paragraph_small">
+                  Понедельник-пятница, с&nbsp;10:00 до&nbsp;19:00
+                </p>
+              </div>
+            </div>
+          </address>
+          <button class="btn btn_big contacts__route-btn">Построить маршрут</button>
+        </div>
+
+        <picture class="contacts__office-photo">
+          <source
+            srcset="./img/contacts-office/contacts-office-x1.webp 1x, ./img/contacts-office/contacts-office-x2.webp 2x"
+            type="image/webp">
+          <img
+            alt="Фото рецепции"
+            src="./img/contacts-office/contacts-office-x1.jpg"
+            srcset="./img/contacts-office/contacts-office-x1.jpg 1x, ./img/contacts-office/contacts-office-x2.jpg 2x">
+        </picture>
+      </div>
+    </div>
+  </section>
 </main>
 <footer class="footer">
   <div class="container">
@@ -572,19 +632,19 @@
         <p class="footer__offer footer__paragraph">
           Представленная на&nbsp;сайте информация носит справочный характер и&nbsp;не&nbsp;является публичной офертой
         </p>
-        <a class="footer__link" href="#" target="_blank">Пользовательское соглашение</a>
+        <a class="line-link" href="#" target="_blank">Пользовательское соглашение</a>
       </div>
       <address class="footer__center-column flex">
         <p class="footer__address footer__paragraph">
           11710, улица Юности, дом 5&nbsp;строение&nbsp;4, офис&nbsp;2
         </p>
         <div class="footer__phones-numbers flex">
-          <a class="footer__link" href="tel:+74995356434">+7&nbsp;499 535-64-34</a>
-          <a class="footer__link" href="tel:+74950050544">+7&nbsp;495 005-05-44</a>
+          <a class="line-link" href="tel:+74995356434">+7&nbsp;499 535-64-34</a>
+          <a class="line-link" href="tel:+74950050544">+7&nbsp;495 005-05-44</a>
         </div>
         <div class="footer__emails flex">
-          <a class="footer__link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
-          <a class="footer__link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+          <a class="line-link" href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a>
+          <a class="line-link" href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
         </div>
       </address>
       <div class="footer__right-column flex">
