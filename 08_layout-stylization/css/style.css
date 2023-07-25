@@ -359,8 +359,8 @@ h3 {
 
 .hotel-card {
   overflow: hidden;
-  width: 374px;
   border-radius: 15px;
+  flex: 0 1 374px;
   background-color: #fff;
 }
 
