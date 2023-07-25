@@ -42,10 +42,6 @@ p {
   list-style: none;
 }
 
-.flex {
-  display: flex;
-}
-
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -138,6 +134,7 @@ p {
 }
 
 .header__top-row {
+  display: flex;
   margin-bottom: 30px;
   align-items: center;
 }
@@ -164,6 +161,7 @@ p {
 }
 
 .header__bottom-row {
+  display: flex;
   padding: 14px 45px;
   border-radius: 15px;
   align-items: center;
@@ -172,6 +170,10 @@ p {
 
 .header__main-menu {
   margin-right: auto;
+}
+
+.main-menu__list {
+  display: flex;
 }
 
 .main-menu__item:not(:last-child) {
@@ -183,21 +185,25 @@ p {
 }
 
 .header__buttons {
+  display: flex;
   column-gap: 40px;
 }
 
 /* special-offer */
 .special-offers__container {
+  display: flex;
   column-gap: 24px;
 }
 
 .special-offers__column {
+  display: flex;
   width: 50%;
   flex-direction: column;
   row-gap: 24px;
 }
 
 .special-offer {
+  display: flex;
   overflow: hidden;
   min-height: 258px;
   padding: 40px 108px 45px 40px;
@@ -260,6 +266,7 @@ p {
 
 /* services */
 .services__services-list {
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -299,6 +306,7 @@ p {
 
 /* advantage */
 .advantage__list {
+  display: flex;
   flex-wrap: wrap;
   gap: 22px;
 }
@@ -351,6 +359,7 @@ p {
 
 /* accommodation */
 .accommodation__list {
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -367,6 +376,7 @@ p {
 }
 
 .hotel-card__content-top-row {
+  display: flex;
   margin-bottom: 16px;
   align-items: center;
   justify-content: space-between;
@@ -394,6 +404,7 @@ p {
 }
 
 .hotel-card_last {
+  display: flex;
   padding: 32px 45px;
   flex-direction: column;
   align-items: center;
