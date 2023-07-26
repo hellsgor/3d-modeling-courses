@@ -1,5 +1,5 @@
 @import url('./fonts.css');
-
+/* 8 */
 html {
   box-sizing: border-box;
 }
@@ -362,14 +362,12 @@ h3 {
 }
 
 .hotel-card {
+  display: flex;
   overflow: hidden;
   border-radius: 15px;
   flex: 0 1 374px;
+  flex-direction: column;
   background-color: #fff;
-}
-
-.hotel-card__image {
-  display: block;
 }
 
 .hotel-card__content {
@@ -415,7 +413,6 @@ h3 {
 }
 
 .hotel-card__card-link {
-  /* width: fit-content; */
   padding-right: 16px;
   font-size: 20px;
   font-weight: 500;
