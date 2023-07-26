@@ -561,7 +561,83 @@
       </ul>
     </div>
   </section>
-  <section class="section want-tour main__section" id="want-tour"></section>
+  <section class="section want-tour main__section" id="want-tour">
+    <div class="container want-tours__wrapper">
+      <h2 class="section__title want-tours__title heading-2">Хочу тур</h2>
+      <form action="https://jsonplaceholder.typicode.com/posts" class="want-tours__form" method="POST">
+        <div class="want-tours__inputs">
+          <div class="want-tours__form-item">
+            <label for="departure-city">Город вылета</label>
+            <select
+              class="want-tours__form-control"
+              id="departure-city"
+              name="departure-city"
+              required
+            >
+              <option disabled selected value="">Выберите город</option>
+              <option value="saint-petersburg">Санкт-Петербург</option>
+              <option value="moscow">Москва</option>
+              <option value="samara">Самара</option>
+            </select>
+          </div>
+
+          <div class="want-tours__form-item">
+            <label for="country">Страна</label>
+            <select
+              class="want-tours__form-control"
+              id="country"
+              name="country"
+              required
+            >
+              <option disabled selected value="">Выберите страну</option>
+              <option value="australia">Австралия</option>
+              <option value="germany">Германия</option>
+              <option value="italy">Италия</option>
+              <option value="france">Франция</option>
+            </select>
+          </div>
+
+          <div class="want-tours__form-item">
+            <label for="arrival-date">Дата прибытия</label>
+            <input
+              class="want-tours__form-control"
+              id="arrival-date"
+              name="arrival-date"
+              required
+              type="date"
+            >
+          </div>
+
+          <div class="want-tours__form-item">
+            <label for="nights-quantity">Ночей</label>
+            <input
+              class="want-tours__form-control"
+              id="nights-quantity"
+              min="0"
+              name="nights-quantity"
+              placeholder="0"
+              required
+              type="number"
+            >
+          </div>
+
+          <div class="want-tours__form-item">
+            <label for="tourist-quantity">Туристы</label>
+            <input
+              class="want-tours__form-control"
+              id="tourist-quantity"
+              min="0"
+              name="tourist-quantity"
+              placeholder="0"
+              required
+              type="number"
+            >
+          </div>
+        </div>
+        <button class="btn btn_pre-big" type="submit">Найти</button>
+      </form>
+    </div>
+  </section>
   <section class="section contacts main__section" id="contacts">
     <div class="container">
       <h2 class="section__title contacts__title heading-2">Контакты</h2>
