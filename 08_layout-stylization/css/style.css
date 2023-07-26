@@ -17,6 +17,13 @@ a {
 
 img {
   max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 body {
@@ -31,7 +38,6 @@ h1,
 h2,
 h3,
 p {
-  padding: 0;
   margin: 0;
 }
 
@@ -42,12 +48,8 @@ p {
   list-style: none;
 }
 
-.flex {
-  display: flex;
-}
-
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -63,6 +65,7 @@ p {
 .section__title {
   padding-left: 40px;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .visually-hidden {
@@ -76,13 +79,12 @@ p {
 }
 
 /* headings */
-.heading-2 {
+h2 {
   font-size: 40px;
   font-weight: 400;
-  color: #333;
 }
 
-.heading-3 {
+h3 {
   font-weight: 700;
 }
 
@@ -93,6 +95,7 @@ p {
   padding: 13px 20px;
   border: 1px solid #c93;
   border-radius: 10px;
+  line-height: 1;
   background-color: #fff;
   color: #c93;
   cursor: pointer;
@@ -102,35 +105,6 @@ p {
   padding: 30px;
 }
 
-/* card links */
-.card-link {
-  display: flex;
-  width: fit-content;
-  /* padding-right: 1px; */
-  align-items: center;
-  column-gap: 1px;
-  /* background-image: url("../img/arrow-right.svg"); */
-  /* background-position: right center; */
-  /* background-repeat: no-repeat; */
-  color: #c93;
-}
-
-/* при использовании псевдоэлемента правая часть стрелки каким-то образом,
-при rotate(-45deg),  выходит за пределы <a> и становится некликабельной. */
-/* почему псевдоэлемент: стрелка используется, и в последней карточке секции Размещение, и в других карточка
-разница только в цвете. Я посчитал, что грузить две svg, как фоновое изображение,
-это слишком много и решил просто сверстать похожий элемент*/
-
-.card-link::after {
-  display: block;
-  width: 11px;
-  height: 11px;
-  border-right: 2px solid #f0bf5f;
-  border-bottom: 2px solid #f0bf5f;
-  content: '';
-  transform: rotate(-45deg);
-}
-
 
 /* header */
 .header {
@@ -138,6 +112,7 @@ p {
 }
 
 .header__top-row {
+  display: flex;
   margin-bottom: 30px;
   align-items: center;
 }
@@ -155,15 +130,23 @@ p {
 }
 
 .header__top-row-link {
-  padding-left: 29px;
-  background-image: url("../img/keyboard_tab.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+}
+
+.header__top-row-link span {
+  /* padding-top необходим для точного,
+  в соответствии с макетом,
+  выравнивания span относительно svg */
+  padding-top: 3px;
+  line-height: 100%;
   color: #c93;
 }
 
 .header__bottom-row {
+  display: flex;
   padding: 14px 45px;
   border-radius: 15px;
   align-items: center;
@@ -172,6 +155,10 @@ p {
 
 .header__main-menu {
   margin-right: auto;
+}
+
+.main-menu__list {
+  display: flex;
 }
 
 .main-menu__item:not(:last-child) {
@@ -183,31 +170,31 @@ p {
 }
 
 .header__buttons {
+  display: flex;
   column-gap: 40px;
 }
 
 /* special-offer */
 .special-offers__container {
+  display: flex;
   column-gap: 24px;
 }
 
 .special-offers__column {
+  display: flex;
   width: 50%;
   flex-direction: column;
   row-gap: 24px;
 }
 
 .special-offer {
+  display: flex;
   overflow: hidden;
   min-height: 258px;
-  padding: 40px 108px 45px 40px;
+  padding: 40px 45px;
   border-radius: 15px;
   flex-direction: column;
   justify-content: flex-end;
-}
-
-.special-offer_big {
-  padding: 40px 216px 45px 40px;
 }
 
 .special-offer_maldives {
@@ -226,6 +213,7 @@ p {
 }
 
 .special-offer__title {
+  max-width: 420px;
   margin-bottom: 15px;
   font-size: 40px;
   color: #fff;
@@ -252,6 +240,14 @@ p {
   min-height: 540px;
 }
 
+.special-offer__link {
+  width: fit-content; /* нужен чтобы ограничить ширину flex-элемента <a>*/
+  padding-right: 16px;
+  background: url("../img/arrow-right.svg") no-repeat right;
+  background-size: 11px;
+  color: #f0bf5f;
+}
+
 /* about-us */
 .about-us__text {
   max-width: 75%;
@@ -260,6 +256,7 @@ p {
 
 /* services */
 .services__services-list {
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -267,28 +264,28 @@ p {
 .service-card {
   overflow: hidden;
   width: 573px;
-  padding: 191px 120px 35px 45px;
+  padding: 191px 45px 35px;
   border-radius: 15px;
+  background-color: #fff;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .service-card_exclusive-service {
-  background: url("../img/services/serv-exclusive-service.jpg") no-repeat center top, #fff;
-  background-size: contain, cover;
+  background-image: url("../img/services/serv-exclusive-service.jpg");
 }
 
 .service-card_halls-rent {
-  background: url("../img/services/serv-halls-rent.jpg") no-repeat center top, #fff;
-  background-size: contain, cover;
+  background-image: url("../img/services/serv-halls-rent.jpg");
 }
 
 .service-card_spa {
-  background: url("../img/services/serv-spa.jpg") no-repeat center top, #fff;
-  background-size: contain, cover;
+  background-image: url("../img/services/serv-spa.jpg");
 }
 
 .service-card_car-parks {
-  background: url("../img/services/serv-car-parks.jpg") no-repeat center top, #fff;
-  background-size: contain, cover;
+  background-image: url("../img/services/serv-car-parks.jpg");
 }
 
 .service-card__title {
@@ -297,8 +294,20 @@ p {
   line-height: 200%;
 }
 
+.service-card__link {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  color: #c93;
+}
+
+.service__description {
+  max-width: 404px;
+}
+
 /* advantage */
 .advantage__list {
+  display: flex;
   flex-wrap: wrap;
   gap: 22px;
 }
@@ -307,59 +316,60 @@ p {
   width: 276px;
   padding: 116px 42px 32px 45px;
   border-radius: 15px;
+  background-color: #fff;
+  background-position: 45px 40px;
+  background-repeat: no-repeat;
+  background-size: 66px;
 }
 
 .advantage-card_bath {
-  background: url("../img/advantages/1-bath.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/1-bath.svg")
 }
 
 .advantage-card_hanger {
-  background: url("../img/advantages/2-hanger.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/2-hanger.svg")
 }
 
 .advantage-card_heating {
-  background: url("../img/advantages/3-heating.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/3-heating.svg")
 }
 
 .advantage-card_hotel-key {
-  background: url("../img/advantages/4-hotel-key.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/4-hotel-key.svg")
 }
 
 .advantage-card_parking {
-  background: url("../img/advantages/5-parking.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/5-parking.svg")
 }
 
 .advantage-card_reception {
-  background: url("../img/advantages/6-reception.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/6-reception.svg")
 }
 
 .advantage-card_safe {
-  background: url("../img/advantages/7-security-box.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/7-security-box.svg")
 }
 
 .advantage-card_swimming-pool {
-  background: url("../img/advantages/8-swimming-pool.svg") no-repeat 45px 40px, #fff;
-  background-size: 66px 66px, cover;
+  background-image: url("../img/advantages/8-swimming-pool.svg")
 }
 
 /* accommodation */
 .accommodation__list {
+  display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
 .hotel-card {
   overflow: hidden;
-  width: 374px;
   border-radius: 15px;
+  flex: 0 1 374px;
   background-color: #fff;
+}
+
+.hotel-card__image {
+  display: block;
 }
 
 .hotel-card__content {
@@ -367,6 +377,7 @@ p {
 }
 
 .hotel-card__content-top-row {
+  display: flex;
   margin-bottom: 16px;
   align-items: center;
   justify-content: space-between;
@@ -394,7 +405,8 @@ p {
 }
 
 .hotel-card_last {
-  padding: 32px 45px;
+  display: flex;
+  padding: 27px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
@@ -402,16 +414,15 @@ p {
   background-size: cover;
 }
 
-.hotel-card_last-link {
+.hotel-card__card-link {
+  /* width: fit-content; */
+  padding-right: 16px;
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
+  background: url("../img/arrow-right-white.svg") no-repeat right;
+  background-size: 11px;
   color: #fff;
-}
-
-.hotel-card_last-link:after {
-  border-right-color: #fff;
-  border-bottom-color: #fff;
 }
 
 /* прижать ссылку к низу карточки можно двумя способами,
