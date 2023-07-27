@@ -93,7 +93,9 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
+h3,
+.heading-3 {
+  font-size: 20px;
   font-weight: 700;
   font-style: normal;
 }
