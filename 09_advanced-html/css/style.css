@@ -1,5 +1,5 @@
 @import url('./fonts.css');
-/* 8 */
+/* 9 */
 html {
   box-sizing: border-box;
 }
@@ -27,7 +27,6 @@ svg {
 }
 
 body {
-  min-width: 1200px;
   font-family: 'Muller', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -49,6 +48,7 @@ p {
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
@@ -74,8 +74,17 @@ p {
 }
 
 .paragraph {
+  font-style: normal;
   line-height: 200%;
   color: #000;
+}
+
+.paragraph_small {
+  line-height: 150%;
+}
+
+.paragraph_gray {
+  color: #999;
 }
 
 /* headings */
@@ -84,8 +93,11 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
+h3,
+.heading-3 {
+  font-size: 20px;
   font-weight: 700;
+  font-style: normal;
 }
 
 /*buttons*/
@@ -101,8 +113,20 @@ h3 {
   cursor: pointer;
 }
 
+.btn_pre-big {
+  height: auto;
+  padding: 0 30px;
+}
+
 .btn_big {
   padding: 30px;
+}
+
+/* line links */
+.line-link {
+  font-style: normal;
+  line-height: 150%;
+  color: #c93;
 }
 
 
@@ -422,7 +446,202 @@ h3 {
   color: #fff;
 }
 
-/* прижать ссылку к низу карточки можно двумя способами,
-мне больше нравится через флекс -
-таким образом нам вообще не нужно будет
-использовать класс accommodation__last-card-link */
+/* want-tours */
+.want-tours__title {
+  padding-left: 0;
+}
+
+.want-tours__wrapper {
+  padding: 45px;
+  border-radius: 15px;
+  background-color: #e9e9e9;
+}
+
+.want-tours__form {
+  display: flex;
+  padding: 32px 28px;
+  border-radius: 15px;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.want-tours__inputs {
+  display: flex;
+  column-gap: 41px;
+}
+
+.want-tours__form-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.want-tours__form-item label {
+  font-size: 12px;
+}
+
+.want-tours__form-control {
+  display: block;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.want-tours__form-item select {
+  min-width: 169px;
+  max-width: fit-content;
+  padding-right: 36px;
+  background: url("../img/select-arrow.svg") no-repeat right;
+  background-size: 10px 6px;
+  appearance: none;
+}
+
+.want-tours__form-item input[type='date']::-webkit-datetime-edit {
+  padding-right: 26px;
+  flex: 0 0 fit-content;
+  align-items: center;
+}
+
+.want-tours__form-item input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  padding: 0;
+  background: url('../img/date-picker-icon.svg') no-repeat center;
+  background-size: 16px;
+  color: transparent;
+  cursor: pointer;
+}
+
+.want-tours__form-item input[type='number'] {
+  max-width: 121px;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.want-tours__form-item input[type='number']::placeholder {
+  color: #000;
+}
+
+.want-tours__form-item input[type="number"]::-webkit-outer-spin-button,
+.want-tours__form-item input[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* contacts */
+.contacts {
+  margin-bottom: 40px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  padding: 45px;
+  border-radius: 15px;
+  justify-content: space-between;
+  column-gap: 52px;
+  background-color: #fff;
+}
+
+.contacts__left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__text-content {
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.contacts__text-content-item {
+  display: flex;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e9e9e9;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.contacts__item-group {
+  display: flex;
+  width: 229px;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.contacts__office-photo {
+  width: 100%;
+  max-width: 653px;
+  height: 528px;
+  font-size: 0;
+  /*   без font-size: 0 у <picture> появляется отступ снизу около 8px*/
+}
+
+.contacts__office-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.contacts__route-btn {
+  max-width: 216px;
+}
+
+/* footer */
+.footer {
+  margin-bottom: 31px;
+}
+
+.footer__wrapper {
+  display: flex;
+  padding: 45px;
+  border-radius: 15px;
+  background: url("../img/footer-background-image.svg") no-repeat 739px bottom, #333;
+  background-size: 254px 228px, cover;
+}
+
+.footer__left-column {
+  display: flex;
+  max-width: 302px;
+  margin-right: 125px;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.footer__center-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.footer__center-column a {
+  line-height: 21px;
+}
+
+.footer__paragraph {
+  font-style: normal;
+  line-height: 190%;
+  color: #fff;
+}
+
+.footer__center-column-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 5px;
+}
+
+.footer__right-column {
+  display: flex;
+  margin-left: auto;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer__social-link {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
