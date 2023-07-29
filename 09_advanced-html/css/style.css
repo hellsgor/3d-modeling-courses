@@ -629,6 +629,7 @@ h3,
 .footer__center-column-item {
   display: flex;
   flex-direction: column;
+  align-items: start;
   row-gap: 5px;
 }
 
@@ -640,6 +641,7 @@ h3,
 }
 
 .footer__social-link {
+  display: block;
   width: 25px;
   height: 25px;
 }
