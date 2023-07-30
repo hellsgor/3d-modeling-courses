@@ -1,5 +1,23 @@
 @import url('./fonts.css');
-/* 9 */
+
+:root {
+  --default-color-f: #f0bf5f;
+  --default-color-c: #c93;
+  --hover-color_c: #c93;
+  --hover-color_f: #f0bf5f;
+  --focus-color: #c93;
+  --active-color: #a47312;
+
+  --button-text-color: #c93;
+  --button-text-color-opposite: #fff;
+  --button-background-color: #fff;
+
+  --project-gray-color-1: #999;
+  --project-gray-color-2: #666;
+
+  --special-offer-card-gradient: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -105,12 +123,14 @@ h3,
   display: block;
   min-width: 108px;
   padding: 13px 20px;
-  border: 1px solid #c93;
+  outline: none;
+  border: 1px solid var(--button-text-color);
   border-radius: 10px;
   line-height: 1;
-  background-color: #fff;
-  color: #c93;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
   cursor: pointer;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, border-color .3s ease-in-out;
 }
 
 .btn_pre-big {
@@ -122,11 +142,47 @@ h3,
   padding: 30px;
 }
 
+.btn:focus {
+  border-color: var(--hover-color_c);
+  background-color: var(--hover-color_c);
+  color: var(--button-text-color-opposite);
+}
+
+
+.btn:hover {
+  border-color: var(--hover-color_c);
+  background-color: var(--hover-color_c);
+  color: var(--button-text-color-opposite);
+}
+
+.btn:active {
+  border-color: var(--active-color);
+  background-color: var(--active-color);
+  color: var(--button-text-color-opposite);
+}
+
 /* line links */
 .line-link {
+  width: fit-content;
+  outline: 1px solid transparent;
+  outline-offset: 5px;
   font-style: normal;
   line-height: 150%;
-  color: #c93;
+  color: var(--default-color-c);
+  transition: color .3s ease-in-out, outline-color .3s ease-in-out;
+}
+
+.line-link:focus {
+  outline-color: var(--focus-color);
+}
+
+.line-link:hover {
+  color: var(--hover-color_f)
+}
+
+.line-link:active {
+  outline-color: transparent;
+  color: var(--active-color);
 }
 
 
@@ -147,17 +203,36 @@ h3,
 }
 
 .header__phone-number {
+  outline-color: transparent;
   margin-right: auto;
   font-size: 20px;
   font-weight: 500;
-  color: #666;
+  color: var(--project-gray-color-2);
+  transition: color .3s ease-in-out, outline-color .3s ease-in-out;
+}
+
+.header__phone-number:focus {
+  outline: 1px solid var(--focus-color);
+  outline-offset: 5px;
+  color: var(--focus-color);
+}
+
+.header__phone-number:hover {
+  color: var(--hover-color_c);
+}
+
+.header__phone-number:active {
+  outline-color: transparent;
+  color: var(--active-color);
 }
 
 .header__top-row-link {
   display: flex;
+  outline: 1px solid transparent;
+  outline-offset: 5px;
   align-items: center;
   column-gap: 5px;
-
+  transition: outline-color .3s ease-in-out;
 }
 
 .header__top-row-link span {
@@ -166,7 +241,33 @@ h3,
   выравнивания span относительно svg */
   padding-top: 3px;
   line-height: 100%;
-  color: #c93;
+  color: var(--default-color-c);
+  transition: color .3s ease-in-out;
+}
+
+.header__top-row-link svg path {
+  transition: fill .3s ease-in-out;
+  fill: var(--default-color-c);
+}
+
+.header__top-row-link:focus {
+  outline-color: var(--focus-color);
+}
+
+.header__top-row-link:hover span {
+  color: var(--hover-color_f)
+}
+
+.header__top-row-link:hover svg path {
+  fill: var(--hover-color_f);
+}
+
+.header__top-row-link:active {
+  outline-color: transparent;
+}
+
+.header__top-row-link:active span {
+  color: var(--active-color);
 }
 
 .header__bottom-row {
@@ -190,7 +291,24 @@ h3,
 }
 
 .main-menu__item-link {
-  color: #666;
+  outline: 1px solid transparent;
+  outline-offset: 5px;
+  color: var(--project-gray-color-2);
+  transition: color .3s ease-in-out, outline-color .3s ease-in-out;
+}
+
+.main-menu__item-link:focus {
+  outline-color: var(--focus-color);
+  color: var(--focus-color);
+}
+
+.main-menu__item-link:hover {
+  color: var(--hover-color_c);
+}
+
+.main-menu__item-link:active {
+  outline-color: transparent;
+  color: var(--active-color);
 }
 
 .header__buttons {
@@ -212,28 +330,29 @@ h3,
 }
 
 .special-offer {
+  position: relative;
   display: flex;
-  overflow: hidden;
   min-height: 258px;
   padding: 40px 45px;
+  outline-offset: 8px;
   border-radius: 15px;
   flex-direction: column;
   justify-content: flex-end;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, cover;
 }
 
 .special-offer_maldives {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%) no-repeat center, url("../img/special-offers/spec-maldives.jpg") no-repeat center;
-  background-size: contain, cover;
+  background-image: var(--special-offer-card-gradient), url("../img/special-offers/spec-maldives.jpg");
 }
 
 .special-offer_hot-tour {
-  background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) 0%, rgba(53, 65, 83, 0.00) 66.67%) no-repeat center, url("../img/special-offers/spec-crete.jpg") no-repeat center;
-  background-size: contain, cover;
+  background-image: var(--special-offer-card-gradient), url("../img/special-offers/spec-crete.jpg");
 }
 
 .special-offer_luxury {
-  background: url("../img/special-offers/spec-luxury.jpg") no-repeat center;
-  background-size: cover;
+  background-image: url("../img/special-offers/spec-luxury.jpg");
 }
 
 .special-offer__title {
@@ -262,14 +381,47 @@ h3,
 .special-offer_big {
   height: 100%;
   min-height: 540px;
+  background-size: cover;
 }
 
 .special-offer__link {
   width: fit-content; /* нужен чтобы ограничить ширину flex-элемента <a>*/
   padding-right: 16px;
+  outline: none;
   background: url("../img/arrow-right.svg") no-repeat right;
   background-size: 11px;
-  color: #f0bf5f;
+  color: var(--default-color-f);
+  transition: padding-right .3s ease-in-out, color .3s ease-in-out;
+}
+
+.special-offer__link:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  outline: 1px solid transparent;
+  outline-offset: 8px;
+  content: '';
+  transition: outline-color .3s ease-in-out;
+
+}
+
+.special-offer__link:focus::after {
+  outline-color: var(--focus-color);
+}
+
+.special-offer__link:hover {
+  padding-right: 26px;
+}
+
+.special-offer__link:active {
+  color: #fff;
+}
+
+.special-offer__link:active::after {
+  outline-color: transparent;
 }
 
 /* about-us */
@@ -286,7 +438,7 @@ h3,
 }
 
 .service-card {
-  overflow: hidden;
+  position: relative;
   width: 573px;
   padding: 191px 45px 35px;
   border-radius: 15px;
@@ -320,30 +472,91 @@ h3,
 
 .service-card__link {
   display: inline-flex;
+  outline: none;
   align-items: center;
   column-gap: 6px;
-  color: #c93;
+  color: var(--default-color-c);
+  transition: column-gap .3s ease-in-out;
+}
+
+.service-card__link span {
+  transition: color .3s ease-in-out;
+}
+
+.service-card__link svg path {
+  transition: stroke .3s ease-in-out;
 }
 
 .service__description {
   max-width: 404px;
 }
 
+.service-card__link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  outline: 1px solid transparent;
+  outline-offset: 8px;
+  content: '';
+  transition: outline-color .3s ease-in-out;
+}
+
+.service-card__link:focus::after {
+  outline-color: var(--focus-color);
+}
+
+.service-card__link:hover {
+  column-gap: 16px;
+}
+
+.service-card__link:hover span {
+  color: var(--hover-color_f);
+}
+
+.service-card__link:hover svg path {
+  stroke: var(--hover-color_f);
+}
+
+.service-card__link:active::after {
+  outline-color: transparent;
+}
+
+.service-card__link:active span {
+  color: var(--active-color);
+}
+
+.service-card__link:active svg path {
+  stroke: var(--active-color);
+}
+
 /* advantage */
 .advantage__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  /* gap: 22px; */
+  /* в соответствии с требованиями практической работы №11
+  отказался от gap и реализовал сетку с помощью
+  псевдокласса :nth-child элемента сетки, а именно .advantage__list-item */
 }
 
 .advantage-card {
   width: 276px;
   padding: 116px 42px 32px 45px;
-  border-radius: 15px;
+  border-radius: 15px;;
   background-color: #fff;
   background-position: 45px 40px;
   background-repeat: no-repeat;
   background-size: 66px;
+}
+
+.advantage__list-item:not(:nth-child(4n)) {
+  margin-right: 22px;
+}
+
+.advantage__list-item:not(:nth-last-child(-n - 4)) {
+  margin-bottom: 22px;
 }
 
 .advantage-card_bath {
@@ -427,6 +640,7 @@ h3,
 }
 
 .hotel-card_last {
+  position: relative;
   display: flex;
   padding: 27px;
   flex-direction: column;
@@ -444,6 +658,15 @@ h3,
   background: url("../img/arrow-right-white.svg") no-repeat right;
   background-size: 11px;
   color: #fff;
+}
+
+.hotel-card__card-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
 }
 
 /* want-tours */
@@ -644,4 +867,21 @@ h3,
   display: block;
   width: 25px;
   height: 25px;
+  outline: none;
+}
+
+.footer__social-link svg path {
+  fill: var(--project-gray-color-1);
+}
+
+.footer__social-link:focus svg path {
+  fill: var(--focus-color);
+}
+
+.footer__social-link:hover svg path {
+  fill: var(--hover-color_c);
+}
+
+.footer__social-link:active svg path {
+  fill: var(--active-color);
 }
