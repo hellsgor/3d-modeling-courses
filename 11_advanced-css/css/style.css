@@ -827,8 +827,8 @@ h3,
   display: flex;
   padding: 45px;
   border-radius: 15px;
-  background: url("../img/footer-background-image.svg") no-repeat 739px bottom, #333;
-  background-size: 254px 228px, cover;
+  background: #333 url("../img/footer-background-image.svg") no-repeat 739px bottom;
+  background-size: 254px 228px;
 }
 
 .footer__left-column {
