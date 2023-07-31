@@ -644,7 +644,7 @@ h3,
   display: flex;
   padding: 27px;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
   background: url("../img/hotel-cards/last.jpg") no-repeat center;
   background-size: cover;
@@ -652,12 +652,14 @@ h3,
 
 .hotel-card__card-link {
   padding-right: 16px;
+  padding-left: 27px;
   font-size: 20px;
   font-weight: 500;
   line-height: 200%;
   background: url("../img/arrow-right-white.svg") no-repeat right;
   background-size: 11px;
   color: #fff;
+  transition: padding-right .3s ease-in-out;
 }
 
 .hotel-card__card-link::after {
@@ -667,6 +669,10 @@ h3,
   bottom: 0;
   left: 0;
   content: '';
+}
+
+.hotel-card__card-link:hover {
+  padding-right: 26px;
 }
 
 /* want-tours */
