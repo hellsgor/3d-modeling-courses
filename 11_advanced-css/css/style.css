@@ -487,7 +487,7 @@ h3,
   transition: stroke .3s ease-in-out;
 }
 
-.service__description {
+.service-card__description {
   max-width: 404px;
 }
 
@@ -675,18 +675,18 @@ h3,
   padding-right: 26px;
 }
 
-/* want-tours */
-.want-tours__title {
+/* want-tour */
+.want-tour__title {
   padding-left: 0;
 }
 
-.want-tours__wrapper {
+.want-tour__wrapper {
   padding: 45px;
   border-radius: 15px;
   background-color: #e9e9e9;
 }
 
-.want-tours__form {
+.want-tour__form {
   display: flex;
   padding: 32px 28px;
   border-radius: 15px;
@@ -694,22 +694,22 @@ h3,
   background-color: #fff;
 }
 
-.want-tours__inputs {
+.want-tour__inputs {
   display: flex;
   column-gap: 41px;
 }
 
-.want-tours__form-item {
+.want-tour__form-item {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
 }
 
-.want-tours__form-item label {
+.want-tour__form-item label {
   font-size: 12px;
 }
 
-.want-tours__form-control {
+.want-tour__form-control {
   display: block;
   outline: none;
   border: none;
@@ -717,7 +717,7 @@ h3,
   line-height: 1;
 }
 
-.want-tours__form-item select {
+.want-tour__form-item select {
   min-width: 169px;
   max-width: fit-content;
   padding-right: 36px;
@@ -726,13 +726,13 @@ h3,
   appearance: none;
 }
 
-.want-tours__form-item input[type='date']::-webkit-datetime-edit {
+.want-tour__form-item input[type='date']::-webkit-datetime-edit {
   padding-right: 26px;
   flex: 0 0 fit-content;
   align-items: center;
 }
 
-.want-tours__form-item input[type='date']::-webkit-calendar-picker-indicator {
+.want-tour__form-item input[type='date']::-webkit-calendar-picker-indicator {
   opacity: 1;
   padding: 0;
   background: url('../img/date-picker-icon.svg') no-repeat center;
@@ -741,17 +741,17 @@ h3,
   cursor: pointer;
 }
 
-.want-tours__form-item input[type='number'] {
+.want-tour__form-item input[type='number'] {
   max-width: 121px;
   border-bottom: 1px solid #e9e9e9;
 }
 
-.want-tours__form-item input[type='number']::placeholder {
+.want-tour__form-item input[type='number']::placeholder {
   color: #000;
 }
 
-.want-tours__form-item input[type="number"]::-webkit-outer-spin-button,
-.want-tours__form-item input[type="number"]::-webkit-inner-spin-button {
+.want-tour__form-item input[type="number"]::-webkit-outer-spin-button,
+.want-tour__form-item input[type="number"]::-webkit-inner-spin-button {
   opacity: 1;
   cursor: pointer;
 }
