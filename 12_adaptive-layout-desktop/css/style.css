@@ -41,7 +41,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  background-color: #fff;
+  line-height: normal;
+  background-color: var(--default-background-color);
+  color: var(--default-color);
 }
 
 .list-reset {
@@ -72,19 +74,35 @@ body {
 /* ========================================================================== */
 
 /* main and sections ======================================================== */
-.main__section {
+.section {
   margin-bottom: 50px;
+}
+
+.section__title {
+  color: var(--default-color);
 }
 
 /* ========================================================================== */
 
-/* headings ================================================================= */
+/* typography =============================================================== */
 
 h1 {
   font-size: 70px;
   font-weight: 800;
-  font-style: normal;
-  line-height: normal;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.paragraph {
+  line-height: 32px;
 }
 
 /* ========================================================================== */
@@ -93,7 +111,6 @@ h1 {
 .text-link {
   font-size: 18px;
   font-weight: 600;
-  line-height: normal;
 }
 
 /* ========================================================================== */
@@ -110,11 +127,29 @@ h1 {
   transition: color var(--transition) var(--transition-func), background-color var(--transition) var(--transition-func), border-color var(--transition) var(--transition-func), outline-color var(--transition) var(--transition-func);
 }
 
+.button_big {
+  padding: 25px 39px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
 .button_primary {
   border-color: transparent;
   font-weight: 700;
   background-color: var(--primary-accent-color);
   color: var(--primary-text-color);
+}
+
+.button_secondary {
+  border-color: var(--secondary-accent-border-color);
+  background-color: var(--secondary-accent-color);
+  color: var(--secondary-accent-text-color);
+}
+
+.button_transparent {
+  border-color: var(--sub-primary-accent-border-color);
+  background-color: transparent;
+  color: var(--sub-primary-text-color);
 }
 
 .button_primary:focus {
@@ -129,12 +164,6 @@ h1 {
 
 .button_primary:active {
   background-color: var(--primary-active-color);
-}
-
-.button_secondary {
-  border-color: var(--secondary-accent-border-color);
-  background-color: var(--secondary-accent-color);
-  color: var(--secondary-accent-text-color);
 }
 
 .button_secondary:focus {
@@ -196,6 +225,23 @@ h1 {
 
 .button_icon-only:active svg rect {
   fill: var(--button-icon-active-color);
+}
+
+.button_transparent:focus {
+  border-color: transparent;
+  background-color: var(--sub-primary-focus-color);
+}
+
+@media (hover: hover) {
+  .button_transparent:hover {
+    border-color: transparent;
+    background-color: var(--sub-primary-hover-color);
+  }
+}
+
+.button_transparent:active {
+  border-color: transparent;
+  background-color: var(--sub-primary-active-color);
 }
 
 /* ========================================================================== */
@@ -304,8 +350,110 @@ h1 {
   color: #fff;
 }
 
-.hero__button {
-
+/* ========================================================================== */
+.about {
+  margin-bottom: 100px;
 }
 
-/* ========================================================================== */
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__description {
+  max-width: 1235px;
+  margin-bottom: 50px;
+}
+
+.about__cards {
+  display: flex;
+  column-gap: var(--gap);
+  --offsets: 1;
+}
+
+.about__column {
+  width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+}
+
+.about__left-cards-column {
+}
+
+.about__right-cards-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap);
+}
+
+.about-card {
+  display: flex;
+  padding: 65px 60px;
+  border: 1px solid var(--gray-color1);
+  border-radius: 32px;
+  flex-direction: row-reverse;
+  column-gap: 50px;
+}
+
+.about-card__text-content {
+  max-width: 460px;
+}
+
+.about-card__title {
+  margin-bottom: 8px;
+  color: var(--default-color);
+}
+
+.about-card__description {
+  color: var(--default-color);
+}
+
+.about-card__image {
+  position: relative;
+  width: 190px;
+  height: 165px;
+  background: url("../assets/images/about-card-ellipse.svg") no-repeat left bottom;
+  background-size: 120px;
+}
+
+.about-card__infographic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.about-card_active .about-card__infographic {
+  background-image: url("../assets/images/about-cards/cube.svg");
+}
+
+.about-card_aspiration .about-card__infographic {
+  background-image: url("../assets/images/about-cards/cogwheel.svg");
+}
+
+.about-card-big {
+  display: flex;
+  height: 100%;
+  border-radius: 32px;
+  align-items: flex-end;
+  background: url("../assets/images/about-cards/success-rates.webp") no-repeat center;
+  background-size: cover;
+}
+
+.about-card-big__billet {
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray-color2);
+}
+
+.about-card-big__description {
+  max-width: 433px;
+  font-weight: 700;
+  color: #fff;
+}
+
+
