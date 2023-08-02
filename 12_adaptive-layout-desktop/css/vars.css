@@ -1,0 +1,34 @@
+:root {
+  /*  indents  */
+  --gap1: 32px;
+
+  /*  default colors  */
+  --default-background-color: #fff;
+
+  /*  primary colors  */
+  --primary-accent-color: #f90;
+  --primary-hover-color: #ffb84d;
+  --primary-focus-color: #ffb84d;
+  --primary-active-color: #e1670e;
+  --primary-text-color: #fff;
+
+
+  /*  secondary colors  */
+  --secondary-accent-color: #fff;
+  --secondary-accent-border-color: #000;
+  --secondary-accent-text-color: #000;
+  --secondary-hover-color: #666;
+  --secondary-focus-color: #666;
+  --secondary-active-color: #000;
+  --secondary-states-text-color: #fff;
+}
+
+:root {
+  /* sub-primary colors */
+  --sub-primary-accent-border-color: var(--primary-accent-color);
+  --sub-primary-accent-color: transparent;
+  --sub-primary-hover-color: var(--primary-hover-color);
+  --sub-primary-focus-color: var(--primary-focus-color);
+  --sub-primary-active-color: var(--primary-active-color);
+  --sub-primary-text-color: var(--primary-text-color);
+}
