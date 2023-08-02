@@ -39,7 +39,6 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 200%;
   background-color: #fff;
 }
 
@@ -48,3 +47,197 @@ body {
   margin: 0;
   list-style: none;
 }
+
+.svg-transition-helper path {
+  transition: stroke var(--transition) var(--transition-func);
+}
+
+.svg-transition-helper rect {
+  transition: fill var(--transition) var(--transition-func);
+}
+
+/* text-link ================================================================ */
+.text-link {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* ========================================================================== */
+
+/* buttons ================================================================== */
+.button {
+  padding: 19px 38px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  background-color: var(--default-background-color);
+  cursor: pointer;
+  transition: color var(--transition) var(--transition-func), background-color var(--transition) var(--transition-func), border-color var(--transition) var(--transition-func), outline-color var(--transition) var(--transition-func);
+}
+
+.button_primary {
+  border-color: transparent;
+  font-weight: 700;
+  background-color: var(--primary-accent-color);
+  color: var(--primary-text-color);
+}
+
+.button_primary:focus {
+  background-color: var(--primary-focus-color);
+}
+
+@media (hover: hover) {
+  .button_primary:hover {
+    background-color: var(--primary-hover-color);
+  }
+}
+
+.button_primary:active {
+  background-color: var(--primary-active-color);
+}
+
+.button_secondary {
+  border-color: var(--secondary-accent-border-color);
+  background-color: var(--secondary-accent-color);
+  color: var(--secondary-accent-text-color);
+}
+
+.button_secondary:focus {
+  border-color: transparent;
+  background-color: var(--secondary-focus-color);
+  color: var(--secondary-states-text-color);
+}
+
+@media (hover: hover) {
+  .button_secondary:hover {
+    border-color: transparent;
+    background-color: var(--secondary-hover-color);
+    color: var(--secondary-states-text-color);
+  }
+}
+
+.button_secondary:active {
+  border-color: transparent;
+  background-color: var(--secondary-active-color);
+  color: var(--secondary-states-text-color);
+}
+
+.button_icon-only {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 0;
+}
+
+.button_icon-only svg path {
+  stroke: var(--button-icon-default-color);
+}
+
+.button_icon-only svg rect {
+  fill: var(--button-icon-default-color);
+}
+
+.button_icon-only:focus {
+  outline-color: var(--button-icon-focus-color);
+}
+
+@media (hover: hover) {
+  .button_icon-only:hover svg path {
+    stroke: var(--button-icon-hover-color);
+  }
+
+  .button_icon-only:hover svg rect {
+    fill: var(--button-icon-hover-color);
+  }
+}
+
+.button_icon-only:active {
+  outline-color: transparent;
+}
+
+.button_icon-only:active svg path {
+  stroke: var(--button-icon-active-color);
+}
+
+.button_icon-only:active svg rect {
+  fill: var(--button-icon-active-color);
+}
+
+/* ========================================================================== */
+
+/* header =================================================================== */
+.header {
+  --column-gap: 85px;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 1920px;
+}
+
+.header__wrapper {
+  display: flex;
+  padding: 14px 75px;
+  border-radius: 0 0 32px 32px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.10);
+}
+
+.header__logo-link {
+  display: flex;
+  height: 100%;
+  max-height: 72px;
+  outline: 2px solid transparent;
+  outline-offset: 5px;
+  align-items: center;
+  transition: outline-color var(--transition) var(--transition-func);
+}
+
+.header__logo-link:focus {
+  outline-color: var(--primary-focus-color);
+}
+
+.header__logo {
+  max-height: 72px;
+}
+
+.header__right-side {
+  display: flex;
+  align-items: center;
+  column-gap: var(--column-gap);
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  column-gap: var(--column-gap);
+}
+
+.main-menu__link {
+  outline: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  color: var(--header-text-link-color);
+  transition: outline-color var(--transition) var(--transition-func), border-bottom-color var(--transition) var(--transition-func);
+}
+
+.main-menu__link:focus {
+  outline-offset: 5px;
+  outline-color: var(--primary-focus-color);
+}
+
+@media (hover: hover) {
+  .main-menu__link:hover {
+    border-bottom-color: var(--primary-hover-color);
+  }
+}
+
+.main-menu__link:active {
+  outline: none;
+  border-bottom-color: var(--primary-active-color);
+  color: var(--primary-active-color);
+}
+
+/* ========================================================================== */

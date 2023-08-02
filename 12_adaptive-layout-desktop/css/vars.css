@@ -1,17 +1,28 @@
 :root {
-  /*  indents  */
-  --gap1: 32px;
+  /* indents */
+  --gap: 32px;
 
-  /*  default colors  */
+  /* transition */
+  --transition: .3s;
+  --transition-func: ease-in-out;
+
+  /* default colors */
   --default-background-color: #fff;
 
-  /*  primary colors  */
+  /* primary colors */
   --primary-accent-color: #f90;
   --primary-hover-color: #ffb84d;
   --primary-focus-color: #ffb84d;
   --primary-active-color: #e1670e;
   --primary-text-color: #fff;
 
+  /* sub-primary colors */
+  --sub-primary-accent-border-color: var(--primary-accent-color);
+  --sub-primary-accent-color: transparent;
+  --sub-primary-hover-color: var(--primary-hover-color);
+  --sub-primary-focus-color: var(--primary-focus-color);
+  --sub-primary-active-color: var(--primary-active-color);
+  --sub-primary-text-color: var(--primary-text-color);
 
   /*  secondary colors  */
   --secondary-accent-color: #fff;
@@ -21,14 +32,14 @@
   --secondary-focus-color: #666;
   --secondary-active-color: #000;
   --secondary-states-text-color: #fff;
-}
 
-:root {
-  /* sub-primary colors */
-  --sub-primary-accent-border-color: var(--primary-accent-color);
-  --sub-primary-accent-color: transparent;
-  --sub-primary-hover-color: var(--primary-hover-color);
-  --sub-primary-focus-color: var(--primary-focus-color);
-  --sub-primary-active-color: var(--primary-active-color);
-  --sub-primary-text-color: var(--primary-text-color);
+  /* buttons with icon only colors */
+  --button-icon-default-color: #000;
+  --button-icon-focus-color: var(--primary-focus-color);
+  --button-icon-hover-color: var(--primary-hover-color);
+  --button-icon-active-color: #000;
+
+  /* text links colors */
+  --header-text-link-color: #000;
+  --footer-text-link-color: #cacaca;
 }

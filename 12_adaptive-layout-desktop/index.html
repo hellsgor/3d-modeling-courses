@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    name="viewport">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <link href="./assets/favicon/favicon.svg" rel="icon" type="image/svg+xml">
   <link href="./assets/favicon/favicon.png" rel="icon" type="image/png">
@@ -16,22 +15,22 @@
 <header class="header">
   <div class="header__container">
     <div class="header__wrapper">
-      <img alt="Логотип компании Евклид" class="header__logo" src="assets/images/logo-black.svg">
+      <a class="header__logo-link" href="">
+        <img alt="Логотип компании Евклид" class="header__logo" src="assets/images/logo-black.svg">
+      </a>
       <div class="header__right-side">
         <nav class="header__main-menu main-menu">
-          <ul class="main-menu__list list-reset">
-            <li class="main-menu__item">
-              <a class="main-menu__link text-link" href="#">О нас</a></li>
-            <li class="main-menu__item">
-              <a class="main-menu__link text-link" href="#">Этапы</a></li>
-            <li class="main-menu__item">
-              <a class="main-menu__link text-link" href="#">Вопросы</a></li>
-            <li class="main-menu__item">
-              <a class="main-menu__link text-link" href="#">Оставить заявку</a>
-            </li>
-          </ul>
+          <a class="main-menu__link text-link text-link_header" href="#">О&nbsp;нас</a>
+          <a class="main-menu__link text-link text-link_header" href="#">Этапы</a>
+          <a class="main-menu__link text-link text-link_header" href="#">Вопросы</a>
+          <a class="main-menu__link text-link text-link_header" href="#">Оставить&nbsp;заявку</a>
         </nav>
-        <img alt="Кнопка вызова модального окна поиска" class="header__search-button" src="./assets/icons/search.svg">
+        <button class="button header__search-button button_icon-only">
+          <svg class="svg-transition-helper" fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <rect fill="black" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" width="7.56126"/>
+            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="black" stroke-width="2"/>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
