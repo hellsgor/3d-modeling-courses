@@ -34,6 +34,8 @@ p {
   margin: 0;
 }
 
+/* global =================================================================== */
+
 body {
   font-family: Montserrat, sans-serif;
   font-size: 16px;
@@ -55,6 +57,37 @@ body {
 .svg-transition-helper rect {
   transition: fill var(--transition) var(--transition-func);
 }
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 75px;
+  margin: 0 auto;
+}
+
+.container_full-width {
+  padding: 0;
+}
+
+/* ========================================================================== */
+
+/* main and sections ======================================================== */
+.main__section {
+  margin-bottom: 50px;
+}
+
+/* ========================================================================== */
+
+/* headings ================================================================= */
+
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: normal;
+}
+
+/* ========================================================================== */
 
 /* text-link ================================================================ */
 .text-link {
@@ -169,6 +202,7 @@ body {
 
 /* header =================================================================== */
 .header {
+  margin-bottom: 50px;
   --column-gap: 85px;
 }
 
@@ -238,6 +272,40 @@ body {
   outline: none;
   border-bottom-color: var(--primary-active-color);
   color: var(--primary-active-color);
+}
+
+/* ========================================================================== */
+
+/* hero ===================================================================== */
+.hero__wrapper {
+  padding: 100px 80px;
+  border-radius: 32px;
+  background: url("../assets/images/low-angle-photo-of-balconies-2462015 1.webp") no-repeat center;
+  background-size: cover;
+}
+
+.hero__content {
+  display: flex;
+  max-width: 837px;
+  margin-bottom: 90px;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.hero__title {
+  color: #fff;
+}
+
+.hero__description {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  color: #fff;
+}
+
+.hero__button {
+
 }
 
 /* ========================================================================== */
