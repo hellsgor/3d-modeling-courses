@@ -461,4 +461,58 @@ h3 {
   color: #fff;
 }
 
+/* ========================================================================== */
+
+/* stage ==================================================================== */
+.stage {
+  padding-bottom: 85px;
+  margin-bottom: 15px;
+}
+
+.stage__title {
+  margin-bottom: 32px;
+}
+
+.stage__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stage__text-content {
+  max-width: 740px;
+}
+
+.stage__text-content-title {
+  margin-bottom: 8px;
+  line-height: 200%;
+}
+
+.stage__text-content .paragraph:last-of-type {
+  margin-bottom: 18px;
+}
+
+.stage__buttons {
+  display: flex;
+  column-gap: 32px;
+}
+
+.stage__right-side {
+  width: 870px;
+  height: 460px;
+  border-radius: 32px;
+  background: url("../assets/images/stage-image.webp") no-repeat center;
+  background-size: cover;
+}
+
+/* .stage__image { */
+/*   width: 870px; */
+/*   height: 460px; */
+/*   background: url("../assets/images/stage-image.webp") no-repeat center; */
+/*   background-size: cover; */
+/* } */
+
+/* ========================================================================== */
+
+
 
