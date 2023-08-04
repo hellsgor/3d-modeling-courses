@@ -246,6 +246,74 @@ h3 {
 
 /* ========================================================================== */
 
+/* card ==+================================================================== */
+.card {
+  display: flex;
+  overflow: hidden;
+  padding: 65px 60px;
+  border: 1px solid var(--gray-color1);
+  border-radius: 32px;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.card_big {
+  height: 100%;
+  padding: 0;
+  border: none;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__text-content {
+  order: 2;
+}
+
+.card__title {
+  margin-bottom: 8px;
+  color: var(--default-color);
+}
+
+.card__description {
+  color: var(--default-color);
+}
+
+.card__infographic {
+  position: relative;
+  height: 165px;
+  flex: 0 0 190px;
+  order: 1;
+  background: url("../assets/images/about-card-ellipse.svg") no-repeat left bottom;
+  background-size: 120px;
+}
+
+.card__accent-image {
+  width: 100%;
+  height: 100%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.card__billet {
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  border-radius: 32px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray-color2);
+}
+
+.card_big .card__description {
+  max-width: 433px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ========================================================================== */
+
 /* header =================================================================== */
 .header {
   margin-bottom: 50px;
@@ -397,74 +465,6 @@ h3 {
 
 /* ========================================================================== */
 
-/* card ==+================================================================== */
-.card {
-  display: flex;
-  overflow: hidden;
-  padding: 65px 60px;
-  border: 1px solid var(--gray-color1);
-  border-radius: 32px;
-  flex-direction: row;
-  gap: 50px;
-}
-
-.card_big {
-  height: 100%;
-  padding: 0;
-  border: none;
-  align-items: flex-end;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.card__text-content {
-  order: 2;
-}
-
-.card__title {
-  margin-bottom: 8px;
-  color: var(--default-color);
-}
-
-.card__description {
-  color: var(--default-color);
-}
-
-.card__infographic {
-  position: relative;
-  height: 165px;
-  flex: 0 0 190px;
-  order: 1;
-  background: url("../assets/images/about-card-ellipse.svg") no-repeat left bottom;
-  background-size: 120px;
-}
-
-.card__accent-image {
-  width: 100%;
-  height: 100%;
-  background-position: top right;
-  background-repeat: no-repeat;
-}
-
-.card__billet {
-  display: flex;
-  width: 100%;
-  padding: 50px;
-  border-radius: 32px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--gray-color2);
-}
-
-.card_big .card__description {
-  max-width: 433px;
-  font-weight: 700;
-  color: #fff;
-}
-
-/* ========================================================================== */
-
 /* stage ==================================================================== */
 .stage {
   padding-bottom: 85px;
@@ -507,14 +507,25 @@ h3 {
   background-size: cover;
 }
 
-/* .stage__image { */
-/*   width: 870px; */
-/*   height: 460px; */
-/*   background: url("../assets/images/stage-image.webp") no-repeat center; */
-/*   background-size: cover; */
-/* } */
-
 /* ========================================================================== */
 
+/* questions ================================================================ */
+.questions {
+  margin-bottom: 100px;
+}
+
+.questions__title {
+  margin-bottom: 32px;
+}
+
+.questions__wrapper {
+  display: flex;
+  column-gap: var(--gap);
+  --offsets: 2;
+}
+
+.questions__card {
+
+}
 
 
