@@ -253,6 +253,65 @@ h3 {
 
 /* ========================================================================== */
 
+/* custom-checkbox */
+
+.custom-checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  z-index: -10000;
+  visibility: hidden;
+}
+
+.custom-checkbox__text {
+  padding-left: 18px;
+  line-height: 32px;
+}
+
+.custom-checkbox .custom-checkbox__text::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--gray-color1);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 13px;
+  content: '';
+  transform: translateY(-50%);
+  transition: border-color .3s ease-in-out;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox__text::before {
+  background-image: url("../assets/icons/check.svg");
+}
+
+.form__checkbox .custom-checkbox__text::after {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  opacity: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+  color: red;
+  content: 'Обязательное поле';
+  transition: opacity .3s ease-in-out;
+}
+
+.custom-checkbox input[type="checkbox"]:invalid + .custom-checkbox__text::after {
+  opacity: 1;
+  /* нет js - сделал "на жёсткую". обычно добавляется классс через js  */
+}
+
+/* ========================================================================== */
+
 /* card ==+================================================================== */
 .card {
   display: flex;
@@ -531,7 +590,6 @@ h3 {
 /* ========================================================================== */
 
 /* footer =================================================================== */
-
 .footer {
   background-color: var(--footer-background-color);
 }
@@ -552,6 +610,7 @@ h3 {
 }
 
 .footer__column_center {
+  flex: 0 1 570px;
   row-gap: 25px;
 }
 
@@ -631,13 +690,20 @@ h3 {
   flex-direction: column;
 }
 
+.footer__column_right {
+  max-width: 363px;
+  margin-top: 87px;
+}
+
+.footer__column_right p {
+  color: var(--gray-color1);
+}
+
 /* ========================================================================== */
 
 /* form ===================================================================== */
-
 .form {
   gap: 25px;
-
 }
 
 .form__control {
@@ -673,6 +739,16 @@ h3 {
 
 .form__control:active {
   background-color: var(--gray-color3);
+}
+
+.form__bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__checkbox .custom-checkbox__text {
+  color: var(--gray-color1);
 }
 
 /* ========================================================================== */
