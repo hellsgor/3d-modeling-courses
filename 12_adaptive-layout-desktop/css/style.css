@@ -124,7 +124,7 @@ h3 {
 
 /* buttons ================================================================== */
 .button {
-  padding: 19px 38px;
+  padding: 19px 36px 18px;
   outline: 2px solid transparent;
   outline-offset: 2px;
   border: 2px solid transparent;
@@ -135,7 +135,7 @@ h3 {
 }
 
 .button_big {
-  padding: 25px 39px;
+  padding: 24px 38px;
   font-size: 23px;
   font-weight: 700;
 }
@@ -194,10 +194,17 @@ h3 {
 }
 
 .button_icon-only {
+  display: flex;
   width: 24px;
   height: 24px;
   padding: 0;
   border-radius: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_icon-only svg {
+  scale: 1.2;
 }
 
 .button_icon-only svg path {
@@ -316,11 +323,11 @@ h3 {
 .card {
   display: flex;
   overflow: hidden;
-  padding: 65px 60px;
+  padding: 64px 58px;
   border: 1px solid var(--gray-color1);
   border-radius: 32px;
   flex-direction: row;
-  gap: 50px;
+  gap: 52px;
 }
 
 .card_big {
@@ -334,6 +341,7 @@ h3 {
 }
 
 .card__text-content {
+  max-width: 452px;
   order: 2;
 }
 
@@ -349,7 +357,7 @@ h3 {
 .card__infographic {
   position: relative;
   height: 165px;
-  flex: 0 0 190px;
+  flex: 0 0 188px;
   order: 1;
   background: url("../assets/images/about-card-ellipse.svg") no-repeat left bottom;
   background-size: 120px;
@@ -464,7 +472,7 @@ h3 {
 .hero__content {
   display: flex;
   max-width: 837px;
-  margin-bottom: 90px;
+  margin-bottom: 88px;
   flex-direction: column;
   row-gap: 24px;
 }
@@ -487,7 +495,7 @@ h3 {
 }
 
 .about__title {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .about__description {
@@ -535,12 +543,11 @@ h3 {
 }
 
 .stage__title {
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 .stage__wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -550,11 +557,11 @@ h3 {
 
 .stage__text-content-title {
   margin-bottom: 8px;
-  line-height: 200%;
+  line-height: 32px;
 }
 
-.stage__text-content .paragraph:last-of-type {
-  margin-bottom: 18px;
+.stage__text-content-text {
+  margin-bottom: 16px;
 }
 
 .stage__buttons {
@@ -564,7 +571,7 @@ h3 {
 
 .stage__right-side {
   width: 870px;
-  height: 460px;
+  height: 100%;
   border-radius: 32px;
   background: url("../assets/images/stage-image.webp") no-repeat center;
   background-size: cover;
@@ -597,7 +604,6 @@ h3 {
 .footer__wrapper {
   display: flex;
   padding: 50px 0 50px;
-  justify-content: space-between;
 }
 
 .footer__column {
@@ -606,6 +612,7 @@ h3 {
 }
 
 .footer__column_left {
+  margin-right: 351px;
   justify-content: space-between;
 }
 
@@ -693,6 +700,7 @@ h3 {
 .footer__column_right {
   max-width: 363px;
   margin-top: 87px;
+  margin-left: auto;
 }
 
 .footer__column_right p {
@@ -703,6 +711,12 @@ h3 {
 
 /* form ===================================================================== */
 .form {
+  gap: var(--gap);
+}
+
+.form__top-row {
+  display: flex;
+  flex-direction: column;
   gap: 25px;
 }
 
@@ -718,6 +732,7 @@ h3 {
 
 .form__control_textarea {
   resize: none;
+  height: 150px;
 }
 
 .form__control::placeholder {
@@ -749,6 +764,11 @@ h3 {
 
 .form__checkbox .custom-checkbox__text {
   color: var(--gray-color1);
+}
+
+.form__button {
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 /* ========================================================================== */
