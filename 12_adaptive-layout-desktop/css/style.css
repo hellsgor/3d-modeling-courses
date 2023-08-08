@@ -304,18 +304,18 @@ h3 {
   background-image: url("../assets/icons/check.svg");
 }
 
-.form__checkbox .custom-checkbox__text::after {
-  position: absolute;
-  top: -10px;
-  left: 0;
-  opacity: 0;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 100%;
-  color: red;
-  content: 'Обязательное поле';
-  transition: opacity .3s ease-in-out;
-}
+/* .form__checkbox .custom-checkbox__text::after { */
+/*   position: absolute; */
+/*   top: -10px; */
+/*   left: 0; */
+/*   opacity: 0; */
+/*   font-size: 12px; */
+/*   font-weight: 300; */
+/*   line-height: 100%; */
+/*   color: red; */
+/*   content: 'Обязательное поле'; */
+/*   transition: opacity .3s ease-in-out; */
+/* } */
 
 .custom-checkbox input[type="checkbox"]:invalid + .custom-checkbox__text::after {
   opacity: 1;
@@ -326,6 +326,7 @@ h3 {
 
 /* card ==+================================================================== */
 .card {
+  position: relative;
   display: flex;
   overflow: hidden;
   padding: 64px 58px;
@@ -352,6 +353,8 @@ h3 {
 
 .card__title {
   margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
   color: var(--default-color);
 }
 
@@ -359,20 +362,28 @@ h3 {
   color: var(--default-color);
 }
 
-.card__infographic {
-  position: relative;
-  height: 165px;
-  flex: 0 0 188px;
-  order: 1;
-  background: url("../assets/images/about-card-ellipse.svg") no-repeat left bottom;
-  background-size: 120px;
+.card__description:before {
+  position: absolute;
+  top: 108px;
+  left: 58px;
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--accent-color-1);
+  content: '';
 }
 
-.card__accent-image {
-  width: 100%;
-  height: 100%;
+.card__description::after {
+  position: absolute;
+  top: 63px;
+  left: 114px;
+  display: block;
+  width: 135px;
+  height: 135px;
   background-position: top right;
   background-repeat: no-repeat;
+  content: '';
 }
 
 .card__billet {
@@ -389,6 +400,14 @@ h3 {
   max-width: 433px;
   font-weight: 700;
   color: #fff;
+}
+
+.card_big .card__description::before {
+  display: none;
+}
+
+.questions__card .card__description::before {
+  display: none;
 }
 
 /* ========================================================================== */
@@ -483,6 +502,8 @@ h3 {
 }
 
 .hero__title {
+  font-size: 70px;
+  font-weight: 800;
   color: #fff;
 }
 
@@ -495,6 +516,8 @@ h3 {
 }
 
 /* ========================================================================== */
+
+/* about ==================================================================== */
 .about {
   margin-bottom: 100px;
 }
@@ -526,15 +549,19 @@ h3 {
   row-gap: var(--gap);
 }
 
+.about__card {
+  padding-left: 300px;
+}
+
 .about__card_builder {
   background-image: url("../assets/images/about-cards/success-rates.webp");
 }
 
-.about-card_active .card__accent-image {
+.about-card_active .card__description::after {
   background-image: url("../assets/images/about-cards/cube.svg");
 }
 
-.about-card_aspiration .card__accent-image {
+.about-card_aspiration .card__description::after {
   background-image: url("../assets/images/about-cards/cogwheel.svg");
 }
 
@@ -556,7 +583,7 @@ h3 {
 }
 
 .stage__text-content {
-  max-width: 740px;
+  max-width: 758px;
 }
 
 .stage__text-content-title {
@@ -573,12 +600,12 @@ h3 {
   column-gap: 32px;
 }
 
-.stage__right-side {
+.stage__wrapper::after {
   width: 870px;
-  height: 100%;
   border-radius: 32px;
   background: url("../assets/images/stage-image.webp") no-repeat center;
   background-size: cover;
+  content: '';
 }
 
 /* ========================================================================== */
