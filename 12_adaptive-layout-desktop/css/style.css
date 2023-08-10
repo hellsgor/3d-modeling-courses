@@ -557,11 +557,11 @@ h3 {
   background-image: url("../assets/images/about-cards/success-rates.webp");
 }
 
-.about-card_active .card__description::after {
+.about__card_active .card__description::after {
   background-image: url("../assets/images/about-cards/cube.svg");
 }
 
-.about-card_aspiration .card__description::after {
+.about__card_aspiration .card__description::after {
   background-image: url("../assets/images/about-cards/cogwheel.svg");
 }
 
