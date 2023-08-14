@@ -45,7 +45,7 @@
   }
 
   .hero__content {
-    max-width: unset;
+    max-width: 782px;
     margin-bottom: 60px;
     row-gap: 16px;
   }

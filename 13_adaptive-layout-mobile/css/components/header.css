@@ -10,8 +10,10 @@
 
 .header__wrapper {
   display: flex;
+  max-width: 1920px;
   padding: 14px 75px;
   border-radius: 0 0 32px 32px;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.10);
