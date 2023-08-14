@@ -1,3 +1,7 @@
+.hero {
+  margin-bottom: 50px;
+}
+
 .hero__wrapper {
   padding: 100px 80px;
   border-radius: 32px;
@@ -25,4 +29,28 @@
   font-style: normal;
   line-height: normal;
   color: #fff;
+}
+
+@media (max-width: 1440px) {
+  .hero {
+    margin-bottom: 35px;
+  }
+
+  .hero__wrapper {
+    padding: 160px 77px;
+  }
+
+  .hero__title {
+    font-size: 60px;
+  }
+
+  .hero__content {
+    max-width: unset;
+    margin-bottom: 60px;
+    row-gap: 16px;
+  }
+
+  .hero__description {
+    font-size: 20px;
+  }
 }

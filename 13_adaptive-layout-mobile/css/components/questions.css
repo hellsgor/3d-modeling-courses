@@ -8,10 +8,29 @@
 
 .questions__wrapper {
   display: flex;
-  column-gap: var(--gap);
+  column-gap: 32px;
   --offsets: 2;
 }
 
 .questions__card .card__description::before {
   display: none;
+}
+
+@media (max-width: 1440px) {
+  .questions {
+    margin-bottom: 78px;
+  }
+
+  .questions__wrapper {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .questions__card {
+    padding: 64px 60px;
+  }
+
+  .questions__card .card__text-content {
+    max-width: unset;
+  }
 }

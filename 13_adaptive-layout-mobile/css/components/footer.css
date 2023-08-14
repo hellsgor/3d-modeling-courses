@@ -93,3 +93,21 @@
 .footer__form-agreement {
   color: var(--gray-color1);
 }
+
+@media (max-width: 1440px) {
+  .footer__wrapper {
+    justify-content: space-between;
+  }
+
+  .footer__column_left {
+    margin-right: 0;
+  }
+
+  .footer__column_center {
+    flex-basis: 541px;
+  }
+
+  .footer__column_right {
+    display: none;
+  }
+}

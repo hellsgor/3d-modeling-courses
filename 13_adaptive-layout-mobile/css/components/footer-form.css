@@ -14,7 +14,15 @@
   justify-content: space-between;
 }
 
-.footer-form__button {
+.form__button {
   padding-right: 50px;
   padding-left: 50px;
+}
+
+@media (max-width: 1440px) {
+  .form__button {
+    padding-right: 36px;
+    padding-bottom: 16px;
+    padding-left: 36px;
+  }
 }

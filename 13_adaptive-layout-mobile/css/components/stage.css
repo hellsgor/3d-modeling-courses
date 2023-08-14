@@ -10,6 +10,7 @@
 .stage__wrapper {
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .stage__text-content {
@@ -31,9 +32,24 @@
 }
 
 .stage__wrapper::after {
-  width: 870px;
+  width: 100%;
   border-radius: 32px;
   background: url("../../assets/images/stage-image.webp") no-repeat center;
   background-size: cover;
   content: '';
+}
+
+@media (max-width: 1440px) {
+  .stage {
+    padding-bottom: 0;
+    margin-bottom: 80px;
+  }
+
+  .stage__text-content {
+    max-width: 437px;
+  }
+
+  .stage__text-content-text {
+    margin-bottom: 25px;
+  }
 }

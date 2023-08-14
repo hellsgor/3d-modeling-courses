@@ -13,7 +13,7 @@
 
 .about__cards {
   display: flex;
-  column-gap: var(--gap);
+  gap: var(--gap);
 }
 
 .about__column {
@@ -43,4 +43,26 @@
 
 .about__card_aspiration .card__description::after {
   background-image: url("../../assets/images/about-cards/cogwheel.svg");
+}
+
+@media (max-width: 1440px) {
+  .about {
+    margin-bottom: 77px;
+  }
+
+  .about__cards {
+    flex-direction: column;
+  }
+
+  .about__card {
+    padding-left: 315px;
+  }
+
+  .about__column {
+    width: 100%;
+  }
+
+  .about__description {
+    margin-bottom: 60px;
+  }
 }

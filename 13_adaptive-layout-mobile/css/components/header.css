@@ -2,12 +2,6 @@
 
 .header {
   margin-bottom: 50px;
-  --column-gap: 85px;
-}
-
-.header__container {
-  width: 100%;
-  max-width: 1920px;
 }
 
 .header__logo:focus {
@@ -26,5 +20,24 @@
 .header__right-side {
   display: flex;
   align-items: center;
-  column-gap: var(--column-gap);
+  column-gap: 85px;
+}
+
+@media (max-width: 1440px) {
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .header__wrapper {
+    padding: 26px 50px;
+    column-gap: 105px;
+  }
+
+  .header__logo {
+    max-width: 150px;
+  }
+
+  .header__right-side {
+    column-gap: 105px;
+  }
 }

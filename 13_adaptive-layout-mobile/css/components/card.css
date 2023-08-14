@@ -78,3 +78,23 @@
 .card_big .card__description::before {
   display: none;
 }
+
+@media (max-width: 1440px) {
+  .card {
+    padding-right: 77px;
+    padding-left: 77px;
+  }
+
+  .card_big {
+    min-height: 640px;
+    padding: 0;
+  }
+
+  .card__description:before {
+    left: 77px;
+  }
+
+  .card__description::after {
+    left: 130px;
+  }
+}

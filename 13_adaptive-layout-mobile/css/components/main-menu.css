@@ -1,7 +1,8 @@
 .main-menu {
   display: flex;
   align-items: center;
-  column-gap: var(--column-gap);
+  justify-content: flex-end;
+  column-gap: 85px;
 }
 
 .main-menu__link {
@@ -23,4 +24,10 @@
 .main-menu__link:active {
   border-bottom-color: var(--primary-active-color);
   color: var(--primary-active-color);
+}
+
+@media (max-width: 1440px) {
+  .main-menu {
+    column-gap: 60px;
+  }
 }

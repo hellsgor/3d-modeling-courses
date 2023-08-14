@@ -97,12 +97,23 @@ body {
 /* ========================================================================== */
 
 /* main and sections ======================================================== */
-.section {
-  margin-bottom: 50px;
-}
+/* .section { */
+/*   margin-bottom: 50px; */
+/* } */
 
 .section__title {
   color: var(--default-color);
 }
 
 /* ========================================================================== */
+
+@media (max-width: 1440px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  /* .section { */
+  /*   margin-bottom: 35px; */
+  /* } */
+}
