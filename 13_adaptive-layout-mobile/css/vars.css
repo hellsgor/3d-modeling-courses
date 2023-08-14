@@ -2,6 +2,13 @@
   /* indents */
   --gap: 32px;
 
+  /* radius */
+  --radius: 32px;
+  @media (max-width: 1024px) {
+    --radius: 24px;
+  }
+
+
   /* transition */
   --transition: .3s;
   --transition-func: ease-in-out;

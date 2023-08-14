@@ -26,3 +26,10 @@
     padding-left: 36px;
   }
 }
+
+@media (max-width: 1024px) {
+  .footer-form__bottom-row {
+    flex-wrap: wrap;
+    row-gap: 11px;
+  }
+}

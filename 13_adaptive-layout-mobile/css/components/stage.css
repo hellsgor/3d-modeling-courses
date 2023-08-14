@@ -33,7 +33,7 @@
 }
 
 .stage__wrapper::after {
-  border-radius: 32px;
+  border-radius: var(--radius);
   flex: 0 1 870px;
   background: url("../../assets/images/stage-image.webp") no-repeat center;
   background-size: cover;
@@ -48,5 +48,30 @@
 
   .stage__text-content-text {
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stage__title {
+    margin-bottom: 31px;
+  }
+
+  .stage__wrapper {
+    flex-direction: column-reverse;
+    row-gap: 39px;
+  }
+
+  .stage__wrapper::after {
+    max-height: 284px;
+  }
+
+  .stage__text-content {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .paragraph-with-indent {
+    margin-top: -32px;
+    text-indent: 287px;
   }
 }

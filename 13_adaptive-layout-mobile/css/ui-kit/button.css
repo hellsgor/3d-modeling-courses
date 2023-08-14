@@ -73,7 +73,6 @@
   width: 24px;
   height: 24px;
   padding: 0;
-  border-radius: 0;
   align-items: center;
   justify-content: center;
 }
@@ -131,4 +130,14 @@
 .button_transparent:active {
   border-color: transparent;
   background-color: var(--sub-primary-active-color);
+}
+
+@media (max-width: 1024px) {
+  .button {
+    border-width: 3px;
+  }
+
+  .button_big {
+    padding: 23px 37px;
+  }
 }

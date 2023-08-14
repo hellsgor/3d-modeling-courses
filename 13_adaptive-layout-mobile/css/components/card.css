@@ -4,7 +4,7 @@
   overflow: hidden;
   padding: 64px 58px;
   border: 1px solid var(--gray-color1);
-  border-radius: 32px;
+  border-radius: var(--radius);
   flex-direction: row;
   gap: 52px;
 }
@@ -63,7 +63,7 @@
   display: flex;
   width: 100%;
   padding: 50px;
-  border-radius: 32px;
+  border-radius: var(--radius);
   align-items: center;
   justify-content: space-between;
   background-color: var(--gray-color2);
@@ -101,5 +101,46 @@
 
   .card_big .card__description {
     max-width: 433px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card {
+    padding: 34px 40px;
+  }
+
+  .card_big {
+    min-height: 650px;
+    padding: 0;
+  }
+
+  .card__billet {
+    padding: 34px 40px;
+    gap: 47px;
+  }
+
+  .card__description:before {
+    top: 95px;
+    left: 40px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .card__description:after {
+    top: 68px;
+    left: 73px;
+    width: 81px;
+  }
+
+  .card__text-content {
+    max-width: unset;
+  }
+
+  .about__card_active .card__description:after {
+    background-size: 71px;
+  }
+
+  .about__card_aspiration .card__description:after {
+    background-size: 81px;
   }
 }

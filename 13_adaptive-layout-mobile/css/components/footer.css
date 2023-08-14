@@ -111,3 +111,23 @@
     display: none;
   }
 }
+
+@media (max-width: 1024px) {
+  .footer__wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__form {
+    max-width: 541px;
+  }
+
+  .footer__column_left {
+    row-gap: 16px;
+  }
+
+  .footer__navigation {
+    display: none;
+  }
+}

@@ -12,7 +12,7 @@
   display: flex;
   max-width: 1920px;
   padding: 14px 75px;
-  border-radius: 0 0 32px 32px;
+  border-radius: 0 0 var(--radius) var(--radius);
   margin: 0 auto;
   align-items: center;
   justify-content: space-between;
@@ -41,5 +41,20 @@
 
   .header__right-side {
     column-gap: 105px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__logo {
+    max-width: 110px;
+  }
+
+  .header__wrapper {
+    padding: 17px 50px;
+    column-gap: 44px;
+  }
+
+  .header__right-side {
+    column-gap: 43px;
   }
 }

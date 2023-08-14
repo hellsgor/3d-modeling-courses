@@ -9,3 +9,10 @@
 .text-link:active {
   outline: none;
 }
+
+@media (max-width: 1024px) {
+  .text-link {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

@@ -34,3 +34,22 @@
     max-width: unset;
   }
 }
+
+@media (max-width: 1024px) {
+  .questions {
+    margin-bottom: 80px;
+  }
+
+  .questions__title {
+    margin-bottom: 30px;
+  }
+
+  .questions__card {
+    padding: 35px 65px 33px 40px;
+    border-radius: 32px;
+  }
+
+  .questions__card:nth-child(2) .card__title {
+    max-width: 92%;
+  }
+}

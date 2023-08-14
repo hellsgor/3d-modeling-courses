@@ -66,3 +66,17 @@
     margin-bottom: 60px;
   }
 }
+
+@media (max-width: 1024px) {
+  .about {
+    margin-bottom: 81px;
+  }
+
+  .about__description {
+    margin-bottom: 54px;
+  }
+
+  .about__card {
+    padding-left: 170px;
+  }
+}
