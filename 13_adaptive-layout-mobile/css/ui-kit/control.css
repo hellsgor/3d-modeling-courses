@@ -28,3 +28,15 @@
 .control:active {
   background-color: var(--gray-color3);
 }
+
+@media (max-width: 576px) {
+  .control {
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+
+  .control::placeholder {
+    font-size: 14px;
+  }
+}

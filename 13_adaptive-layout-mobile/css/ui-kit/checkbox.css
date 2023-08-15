@@ -38,3 +38,9 @@
 .custom-checkbox input[type="checkbox"]:invalid + .custom-checkbox__text::after {
   opacity: 1;
 }
+
+@media (max-width: 576px) {
+  .custom-checkbox__text {
+    font-size: 16px;
+  }
+}

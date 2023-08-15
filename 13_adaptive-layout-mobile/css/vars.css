@@ -4,9 +4,6 @@
 
   /* radius */
   --radius: 32px;
-  @media (max-width: 1024px) {
-    --radius: 24px;
-  }
 
 
   /* transition */
@@ -61,4 +58,16 @@
   /* text links colors */
   --header-text-link-color: #000;
   --footer-text-link-color: var(--gray-color1);
+}
+
+@media (max-width: 992px) {
+  :root {
+    --radius: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --radius: 16px;
+  }
 }

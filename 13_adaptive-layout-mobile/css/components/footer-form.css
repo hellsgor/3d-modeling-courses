@@ -14,22 +14,36 @@
   justify-content: space-between;
 }
 
-.form__button {
+.footer-form__button {
   padding-right: 50px;
   padding-left: 50px;
 }
 
-@media (max-width: 1440px) {
-  .form__button {
+@media (max-width: 1200px) {
+  .footer-form__button {
     padding-right: 36px;
     padding-bottom: 16px;
     padding-left: 36px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .footer-form__bottom-row {
     flex-wrap: wrap;
     row-gap: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-form {
+    row-gap: 25px;
+  }
+
+  .footer-form__bottom-row {
+    justify-content: center;
+  }
+
+  .footer-form__button {
+    padding: 11px 18px;
   }
 }

@@ -132,12 +132,31 @@
   background-color: var(--sub-primary-active-color);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .button {
     border-width: 3px;
   }
 
   .button_big {
     padding: 23px 37px;
+  }
+}
+
+@media (max-width: 576px) {
+  .button {
+    padding: 11px 42px;
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  .button_big {
+    padding: 12px 26px 11px;
+  }
+
+  .button_transparent {
+    border-color: var(--sub-primary-accent-border-color);
+    background-color: transparent;
+    color: var(--sub-primary-accent-border-color);
   }
 }

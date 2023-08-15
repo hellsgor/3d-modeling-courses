@@ -1,7 +1,6 @@
 .card {
   position: relative;
   display: flex;
-  overflow: hidden;
   padding: 64px 58px;
   border: 1px solid var(--gray-color1);
   border-radius: var(--radius);
@@ -10,10 +9,11 @@
 }
 
 .card_big {
+  display: block;
   height: 100%;
+  min-height: 622px;
   padding: 0;
   border: none;
-  align-items: flex-end;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,52 +59,71 @@
   content: '';
 }
 
-.card__billet {
-  display: flex;
-  width: 100%;
-  padding: 50px;
-  border-radius: var(--radius);
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--gray-color2);
-  gap: 50px;
-}
-
-.card_big .card__description {
-  max-width: 433px;
-  font-weight: 700;
-  color: #fff;
-}
-
 .card_big .card__description::before {
   display: none;
 }
 
-@media (max-width: 1440px) {
-  .card {
-    padding-right: 77px;
-    padding-left: 77px;
+@media (max-width: 1600px) {
+  .card__text-content {
+    max-width: 812px;
   }
 
+  .card__description:before {
+    top: 95px;
+    left: 100px;
+    width: 72px;
+    height: 72px;
+  }
+
+  .card__description:after {
+    top: 68px;
+    left: 133px;
+    width: 81px;
+  }
+
+  .about__card_active .card__description:after {
+    background-size: 71px;
+  }
+
+  .about__card_aspiration .card__description:after {
+    background-size: 81px;
+  }
+}
+
+@media (max-width: 1200px) {
   .card_big {
     min-height: 640px;
     padding: 0;
   }
 
+  .card__text-content {
+    min-width: 454px;
+  }
+
   .card__description:before {
-    left: 77px;
+    top: 108px;
+    left: 76px;
+    width: 120px;
+    height: 120px;
   }
 
   .card__description::after {
-    left: 130px;
+    top: 63px;
+    left: 128px;
+    width: 140px;
+    height: 140px;
   }
 
-  .card_big .card__description {
-    max-width: 433px;
+  .about__card_active .card__description:after {
+    background-size: 119px;
+  }
+
+  .about__card_aspiration .card__description:after {
+    background-size: 137px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .card {
     padding: 34px 40px;
   }
@@ -114,9 +133,8 @@
     padding: 0;
   }
 
-  .card__billet {
-    padding: 34px 40px;
-    gap: 47px;
+  .card__text-content {
+    max-width: 452px;
   }
 
   .card__description:before {
@@ -132,15 +150,57 @@
     width: 81px;
   }
 
-  .card__text-content {
-    max-width: unset;
-  }
-
   .about__card_active .card__description:after {
     background-size: 71px;
   }
 
   .about__card_aspiration .card__description:after {
     background-size: 81px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 61px 0 0;
+    border-width: 0;
+    row-gap: 52px;
+  }
+
+  .card_big {
+    height: 200px;
+    min-height: unset;
+  }
+
+  .card__text-content {
+    min-width: unset;
+    max-width: unset;
+  }
+
+  .card__title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .card__description:before {
+    top: 6px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+  }
+
+  .card__description:after {
+    top: 0;
+    left: 20px;
+    width: 43px;
+    height: 48px
+  }
+
+  .about__card_active .card__description:after {
+    background-size: 43px;
+  }
+
+  .about__card_aspiration .card__description:after {
+    background-size: 43px;
   }
 }

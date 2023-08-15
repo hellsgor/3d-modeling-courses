@@ -26,13 +26,13 @@
   color: var(--primary-active-color);
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .main-menu {
     column-gap: 60px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .main-menu {
     column-gap: 40px;
   }

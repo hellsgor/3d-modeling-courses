@@ -97,9 +97,6 @@ body {
 /* ========================================================================== */
 
 /* main and sections ======================================================== */
-/* .section { */
-/*   margin-bottom: 50px; */
-/* } */
 
 .section__title {
   color: var(--default-color);
@@ -107,13 +104,20 @@ body {
 
 /* ========================================================================== */
 
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .container {
     padding-right: 50px;
     padding-left: 50px;
   }
+}
 
-  /* .section { */
-  /*   margin-bottom: 35px; */
-  /* } */
+@media (max-width: 576px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
