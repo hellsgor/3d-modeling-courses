@@ -120,7 +120,7 @@
   }
 
   .stage__buttons {
-    justify-content: space-between;
+    justify-content: flex-start;
     column-gap: 10px;
   }
 

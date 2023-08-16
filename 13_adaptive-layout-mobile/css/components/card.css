@@ -91,13 +91,15 @@
 }
 
 @media (max-width: 1200px) {
+
   .card_big {
     min-height: 640px;
     padding: 0;
   }
 
   .card__text-content {
-    min-width: 454px;
+    /* min-width: 450px; */
+    max-width: 452px;
   }
 
   .card__description:before {

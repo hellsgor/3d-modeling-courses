@@ -68,7 +68,7 @@
   color: var(--secondary-states-text-color);
 }
 
-.button_icon-only {
+button.button_icon-only {
   display: flex;
   width: 24px;
   height: 24px;

@@ -105,6 +105,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .about__card {
+    padding-left: 170px;
+  }
+}
+
 @media (max-width: 576px) {
   .about {
     margin-bottom: 60px;

@@ -40,6 +40,7 @@
   }
 
   .footer-form__bottom-row {
+    flex-direction: column;
     justify-content: center;
   }
 
