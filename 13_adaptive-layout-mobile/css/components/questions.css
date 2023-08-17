@@ -8,8 +8,14 @@
 
 .questions__wrapper {
   display: flex;
-  column-gap: 32px;
+  flex-wrap: wrap;
+  column-gap: var(--offset);
   --offsets: 2;
+  --offset: 32px;
+}
+
+.questions__card {
+  width: calc((100% - (var(--offset) * var(--offsets))) / (var(--offsets) + 1));
 }
 
 .questions__card .card__description::before {
@@ -23,7 +29,8 @@
 
   .questions__wrapper {
     flex-direction: column;
-    row-gap: 32px;
+    row-gap: var(--offset);
+    --offsets: 0;
   }
 
   .questions__card {
