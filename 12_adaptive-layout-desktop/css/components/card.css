@@ -59,7 +59,7 @@
   content: '';
 }
 
-.card__billet {
+.about__card-billet {
   display: flex;
   width: 100%;
   padding: 50px;
