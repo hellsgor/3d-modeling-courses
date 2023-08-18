@@ -6,12 +6,16 @@
 .custom-checkbox input[type="checkbox"] {
   position: absolute;
   z-index: -10000;
-  visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
 .custom-checkbox__text {
   padding-left: 18px;
+  outline: 2px solid transparent;
+  outline-offset: 5px;
   line-height: 32px;
+  transition: outline-color var(--transition) var(--transition-func);
 }
 
 .custom-checkbox .custom-checkbox__text::before {
@@ -37,6 +41,14 @@
 
 .custom-checkbox input[type="checkbox"]:invalid + .custom-checkbox__text::after {
   opacity: 1;
+}
+
+.custom-checkbox input[type="checkbox"]:focus + .custom-checkbox__text {
+  outline-color: var(--primary-focus-color);
+}
+
+.custom-checkbox input[type="checkbox"]:active + .custom-checkbox__text {
+  outline: none;
 }
 
 @media (max-width: 576px) {
