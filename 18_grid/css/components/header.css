@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  width: 100%;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  background-color: var(--accent-color);
+}
+
+.header__row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  column-gap: 56px;
+}
+
+.header__menu-link {
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--white-font-color);
+}
