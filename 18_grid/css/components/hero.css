@@ -1,0 +1,37 @@
+.hero {
+  background: var(--black-background-gradient) center no-repeat;
+  background-size: 100%;
+}
+
+.hero__container {
+  position: relative;
+  padding-top: calc(130px + 80px);
+  padding-bottom: 130px;
+}
+
+.hero__content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 70px;
+}
+
+.hero__title {
+  max-width: 459px;
+  color: var(--white-font-color);
+}
+
+.hero__description {
+  max-width: 444px;
+  color: var(--white-font-color);
+}
+
+.hero__image {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 593px;
+  transform: translateY(-50%);
+}
