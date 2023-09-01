@@ -1,0 +1,56 @@
+.courses-card {
+  min-width: 539px;
+}
+
+.courses-card__image {
+  position: relative;
+  overflow: hidden;
+  min-height: 180px;
+  border-top-left-radius: var(--default-radius);
+  border-top-right-radius: var(--default-radius);
+}
+
+.courses-card__picture {
+  display: block;
+  height: 0;
+}
+
+.course-card__timing {
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  display: flex;
+  column-gap: 5px;
+  color: var(--white-font-color);
+}
+
+.course-card__timing::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../../assets/images/courses/mdi_access_time.svg") no-repeat left center;
+  background-size: 100%;
+  content: '';
+}
+
+.course-card__bottom {
+  display: flex;
+  height: 300px;
+  padding: 30px;
+  border-bottom-left-radius: var(--default-radius);
+  border-bottom-right-radius: var(--default-radius);
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--default-course-card-background-color);
+}
+
+.course-card__title {
+  margin-bottom: 8px;
+  line-height: 27px;
+  color: var(--black-background-color);
+}
+
+.course-card__description {
+  color: var(--dark-font-color);
+
+}

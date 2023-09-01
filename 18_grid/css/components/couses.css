@@ -1,0 +1,14 @@
+@import url(./course.css);
+
+section.courses {
+  padding-top: 74px;
+}
+
+.courses__title {
+  margin-bottom: 24px;
+  letter-spacing: -2px;
+}
+
+.courses__wrapper {
+  row-gap: var(--default-block-indent);
+}
