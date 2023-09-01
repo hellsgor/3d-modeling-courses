@@ -1,0 +1,14 @@
+@import url(./teacher-card.css);
+
+section.teachers {
+  padding-bottom: 74px;
+  background-color: var(--black-background-color);
+}
+
+.teachers__title {
+  margin-bottom: 25px;
+  font-size: 37px;
+  line-height: 32px;
+  letter-spacing: .2px;
+  color: var(--default-light-color);
+}
