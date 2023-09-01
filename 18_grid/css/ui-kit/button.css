@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  width: fit-content;
+  padding: 24px 76px;
+  border-radius: var(--default-radius);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  background-color: var(--accent-color);
+  color: var(--white-font-color);
+}
+
+.button_small {
+  padding: 21px 59px;
+  font-size: 16px;
+}

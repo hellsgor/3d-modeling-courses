@@ -28,10 +28,11 @@
 
 .hero__image {
   position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: 0;
+  top: calc(50% + 40px);
+  right: 15px;
+  /* bottom: 12px; */
   width: auto;
-  height: 593px;
+  max-width: 633px;
+  max-height: 593px;
   transform: translateY(-50%);
 }
