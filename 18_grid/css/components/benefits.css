@@ -1,0 +1,25 @@
+@import url(./benefit.css);
+
+.benefits__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.benefits__header {
+  padding-left: 205px;
+  background: url("../../assets/images/benefits/benefits-header-image.png") no-repeat 15px center;
+  background-size: 160px 142px;
+}
+
+.benefits__title {
+  max-width: 468px;
+  margin-bottom: 17px;
+  letter-spacing: -1.2px;
+  color: var(--black-font-color);
+}
+
+.benefits__description {
+  max-width: 585px;
+  color: var(--dark-font-color);
+}

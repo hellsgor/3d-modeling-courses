@@ -1,6 +1,7 @@
 :root {
   /* indents */
   --default-headings-indent: 30px;
+  --default-block-indent: 30px;
 
   /* radius */
   --default-radius: 20px;

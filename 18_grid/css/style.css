@@ -6,3 +6,9 @@
 
 @import url(./components/header.css);
 @import url(./components/hero.css);
+@import url(./components/benefits.css);
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
