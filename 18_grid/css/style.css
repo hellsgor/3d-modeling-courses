@@ -9,6 +9,7 @@
 @import url(./components/benefits.css);
 @import url(./components/teachers.css);
 @import url(./components/couses.css);
+@import url(./components/footer.css);
 
 .section {
   padding-top: 80px;
