@@ -23,3 +23,26 @@
   max-width: 585px;
   color: var(--dark-font-color);
 }
+
+@media (min-width: 768px) {
+  section.benefits {
+    padding-bottom: 74px;
+  }
+
+  .benefits__header {
+    padding-left: 255px;
+    background-size: 211px 187px;
+    background-position-y: 23px;
+  }
+}
+
+@media (min-width: 992px) {
+  section.benefits {
+    padding-bottom: 80px;
+  }
+
+  .benefits__header {
+    padding-left: 205px;
+    background-size: 160px 142px;
+  }
+}
