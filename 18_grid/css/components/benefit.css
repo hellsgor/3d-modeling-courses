@@ -71,8 +71,11 @@
 
 @media (min-width: 992px) {
   .benefit__text {
-    min-width: 350px;
     flex-direction: row;
     align-items: center;
   }
+}
+
+@media (min-width: 1200px) {
+  min-width: 350px;
 }

@@ -12,3 +12,19 @@ section.teachers {
   letter-spacing: .2px;
   color: var(--default-light-color);
 }
+
+.teachers__wrapper {
+  row-gap: 0;
+}
+
+@media (min-width: 768px) {
+  .teachers__wrapper {
+    row-gap: 25px;
+  }
+}
+
+/* @media (min-width: 992px) { */
+/*   .teachers__wrapper { */
+/*     row-gap: 0; */
+/*   } */
+/* } */
