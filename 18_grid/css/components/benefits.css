@@ -11,10 +11,6 @@ section.benefits {
   row-gap: 24px;
 }
 
-.benefits__header {
-
-}
-
 .benefits__title {
   max-width: 468px;
   margin-bottom: 2px;
@@ -31,9 +27,20 @@ section.benefits {
 }
 
 @media (min-width: 576px) {
-  padding-left: 205px;
-  background: url("../../assets/images/benefits/benefits-header-image.png") no-repeat 15px center;
-  background-size: 160px 142px;
+  section.benefits {
+    padding-top: 81px;
+    padding-bottom: 55px;
+  }
+
+  .benefits__header {
+    padding-left: 195px;
+    background: url("../../assets/images/benefits/benefits-header-image.png") no-repeat 15px top;
+    background-size: 150px 134px;
+  }
+
+  .benefits__title {
+    margin-bottom: 17px;
+  }
 }
 
 @media (min-width: 768px) {

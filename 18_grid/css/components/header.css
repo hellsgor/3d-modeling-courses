@@ -42,16 +42,27 @@
 
 @media (min-width: 576px) {
   .header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 32px;
+    padding-bottom: 31px;
   }
 
   .header__container {
     row-gap: 33px;
   }
+
+  .header__menu {
+    width: unset;
+    align-items: center;
+    align-self: unset;
+  }
 }
 
 @media (min-width: 768px) {
+  .header {
+    padding-top: 29px;
+    padding-bottom: 30px;
+  }
+
   .header__container {
     flex-direction: row;
     justify-content: space-between;
@@ -65,7 +76,7 @@
 
 @media (min-width: 992px) {
   .header__menu {
-    column-gap: 56px;
+    column-gap: 57px;
   }
 }
 

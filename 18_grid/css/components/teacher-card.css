@@ -30,22 +30,19 @@
 
 @media (min-width: 768px) {
   .teacher-card {
-    row-gap: 24px;
-  }
-
-  .teacher-card__description {
-    max-width: unset;
+    row-gap: 31px;
   }
 }
 
 @media (min-width: 992px) {
-  .teacher-card__description {
+  .teacher-card__image {
+    height: unset;
   }
 }
 
 @media (min-width: 1200px) {
   .teacher-card {
-    row-gap: 23px;
+    row-gap: 30px;
   }
 
   .teacher-card__description {

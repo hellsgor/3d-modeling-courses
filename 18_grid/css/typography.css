@@ -40,6 +40,12 @@ h3,
   heading-1 {
     font-size: 50px;
   }
+
+  h2,
+  heading-2 {
+    font-size: 40px;
+    line-height: 100%;
+  }
 }
 
 @media (min-width: 992px) {

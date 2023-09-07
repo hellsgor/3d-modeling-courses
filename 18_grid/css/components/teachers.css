@@ -15,6 +15,13 @@ section.teachers {
   row-gap: 22px;
 }
 
+@media (min-width: 576px) {
+  section.teachers {
+    padding-top: 75px;
+    padding-bottom: 72px;
+  }
+}
+
 @media (min-width: 768px) {
   section.teachers {
     padding-top: 74px;
@@ -23,5 +30,11 @@ section.teachers {
 
   .teachers__wrapper {
     row-gap: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section.teachers {
+    padding-bottom: 73px;
   }
 }

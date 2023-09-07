@@ -1,6 +1,6 @@
 .footer__social {
   padding-top: 28px;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   justify-content: center;
   column-gap: var(--default-block-indent);
   background-color: var(--black-background-color);
@@ -23,4 +23,10 @@
 
 .footer__copyright-text span {
   color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+  .footer__social {
+    padding-bottom: 28px;
+  }
 }

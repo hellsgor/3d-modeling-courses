@@ -65,6 +65,12 @@
   color: var(--dark-font-color);
 }
 
+@media (min-width: 576px) {
+  .course-card__title {
+    max-width: unset;
+  }
+}
+
 @media (min-width: 768px) {
   .course-card__timing {
     right: 10px;
@@ -75,13 +81,17 @@
   }
 
   .course-card__bottom {
-    padding: 30px 24px 30px 30px;
+    padding: 32px 24px 30px 30px;
     flex-basis: 376px;
     row-gap: 29px;
   }
 
   .course-card_blender .course-card__bottom {
-    padding: 30px 22px 30px 30px;
+    padding: 32px 22px 30px 30px;
+  }
+
+  .course-card__title {
+    margin-bottom: 10px;
   }
 }
 
