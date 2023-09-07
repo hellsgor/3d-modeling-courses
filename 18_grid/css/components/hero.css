@@ -35,23 +35,23 @@
     row-gap: 62px;
   }
 
-  .hero__image {
-    top: calc(50% + 33px);
-    max-width: 365px;
-  }
-
   .hero__title {
     max-width: 385px;
   }
 
   .hero__description {
     max-width: 326px;
+    font-size: 18px;
     line-height: 27px;
   }
 
   .hero__container {
     padding-top: calc(130px + 80px);
     padding-bottom: 135px;
+  }
+
+  .hero__image {
+    top: calc(50% + 27px);
   }
 }
 
@@ -62,17 +62,12 @@
   }
 
   .hero__content {
-    row-gap: 60px;
+    row-gap: 63px;
   }
 
   .hero__description {
     max-width: 444px;
-    /* line-height: 26px; */
-  }
-
-  .hero__image {
-    top: calc(50% + 40px);
-    max-width: 512px;
+    line-height: 26px;
   }
 }
 

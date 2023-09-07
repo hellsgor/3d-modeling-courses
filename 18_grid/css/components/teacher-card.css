@@ -16,8 +16,8 @@
 
 .teacher-card__title {
   max-width: 254px;
-  margin-bottom: 7px;
-  font-size: 17px;
+  margin-bottom: 8px;
+  font-size: 18px;
   line-height: 150%;
   color: var(--default-light-color);
 }
@@ -31,20 +31,22 @@
 
 @media (min-width: 768px) {
   .teacher-card {
-    min-width: 330px;
-    row-gap: 26px;
+    row-gap: 24px;
   }
 
   .teacher-card__description {
-    width: 331px;
     max-width: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .teacher-card__description {
   }
 }
 
 @media (min-width: 1200px) {
   .teacher-card {
-    min-width: 255px;
-    row-gap: 25px;
+    row-gap: 23px;
   }
 
   .teacher-card__description {

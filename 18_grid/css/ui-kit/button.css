@@ -1,7 +1,7 @@
 .button {
   display: block;
   width: fit-content;
-  padding: 24px 72px;
+  padding: 24px 76px;
   border-radius: var(--default-radius);
   font-size: 18px;
   font-weight: 700;
@@ -11,6 +11,19 @@
 }
 
 .button_small {
-  padding: 21px 58px;
   font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .button_small {
+    padding: 21px 56px;
+
+  }
+}
+
+@media (min-width: 992px) {
+  .button_small {
+    padding-right: 58px;
+    padding-left: 58px;
+  }
 }

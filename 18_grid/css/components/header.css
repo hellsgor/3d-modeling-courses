@@ -10,16 +10,29 @@
 .header__row {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   justify-content: space-between;
 }
 
 .header__menu {
   display: flex;
-  column-gap: 56px;
+  align-items: baseline;
 }
 
 .header__menu-link {
   font-size: 18px;
   line-height: 100%;
   color: var(--white-font-color);
+}
+
+@media (min-width: 768px) {
+  .header__menu {
+    column-gap: 57px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header__menu {
+    column-gap: 56px;
+  }
 }

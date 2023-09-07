@@ -15,7 +15,6 @@
 .benefits__title {
   max-width: 468px;
   margin-bottom: 17px;
-  letter-spacing: -1.2px;
   color: var(--black-font-color);
 }
 
@@ -26,7 +25,7 @@
 
 @media (min-width: 768px) {
   section.benefits {
-    padding-bottom: 74px;
+    padding-bottom: 75px;
   }
 
   .benefits__header {

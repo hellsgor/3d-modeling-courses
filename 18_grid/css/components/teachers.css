@@ -1,15 +1,15 @@
 @import url(./teacher-card.css);
 
 section.teachers {
-  padding-bottom: 74px;
+  padding-bottom: 73px;
   background-color: var(--black-background-color);
 }
 
 .teachers__title {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-size: 37px;
-  line-height: 32px;
-  letter-spacing: .2px;
+  line-height: 40px;
+  letter-spacing: 1.7px;
   color: var(--default-light-color);
 }
 
@@ -18,13 +18,12 @@ section.teachers {
 }
 
 @media (min-width: 768px) {
+  section.teachers {
+    padding-top: 74px;
+    padding-bottom: 49px;
+  }
+
   .teachers__wrapper {
-    row-gap: 25px;
+    row-gap: 22px;
   }
 }
-
-/* @media (min-width: 992px) { */
-/*   .teachers__wrapper { */
-/*     row-gap: 0; */
-/*   } */
-/* } */

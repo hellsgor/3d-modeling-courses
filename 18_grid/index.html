@@ -2,14 +2,13 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 shrink-to-fit=no"
     name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <link href="./assets/favicon/favicon.svg" rel="icon" type="image/svg+xml">
   <link href="./favicon.png" rel="icon" type="image/png">
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/bootstrap-grid.min.css" rel="stylesheet">
-  <link href="./css/fonts.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
   <title>Курсы 3D моделирования</title>
 </head>
@@ -42,8 +41,11 @@
 
         </div>
         <picture class="hero__image">
-          <source srcset="./assets/images/hero/hero-image.webp 1x, ./assets/images/hero/hero-image-x2.webp 2x" type="image/webp">
-          <img alt="Изображение Курсы 3D моделирования" src="assets/images/hero/hero-image.png" srcset="./assets/images/hero/hero-image.png 1x, ./assets/images/hero/hero-image-x2.png 2x">
+          <source media="(max-width: 991.98px)" srcset="./assets/images/hero/hero-image-768-1x.webp 1x, ./assets/images/hero/hero-image-768-2x.webp 2x" type="image/webp">
+          <source media="(max-width: 991.98px)" srcset="./assets/images/hero/hero-image-768-1x.png 1x, ./assets/images/hero/hero-image-768-2x.png 2x" type="image/png">
+          <source srcset="assets/images/hero/hero-image-1920-1x.webp 1x, assets/images/hero/hero-image-1920-x2.webp 2x" type="image/webp">
+          <source srcset="assets/images/hero/hero-image-1920-1x.png 1x, assets/images/hero/hero-image-1920-x2.png 2x" type="image/png">
+          <img alt="Изображение Курсы 3D моделирования" src="assets/images/hero/hero-image-1920-1x.png">
         </picture>
       </div>
     </div>
@@ -59,17 +61,17 @@
         </div>
       </div>
       <div class="row benefits__wrapper">
-        <div class="col-4 benefits__benefit benefit benefit_eye">
+        <div class="col-sm-4 col-12 benefits__benefit benefit benefit_eye">
           <p class="benefit__text">
             Результат вашего обучения является самым важным для нас приоритетом
           </p>
         </div>
-        <div class="col-4 benefits__benefit benefit benefit_fingers">
+        <div class="col-sm-4 col-12 benefits__benefit benefit benefit_fingers">
           <p class="benefit__text">
-            Лично познакомитесь с&nbsp;одним из&nbsp;своих будущих преподавателей
+            Лично&nbsp;познакомитесь&nbsp;с одним из&nbsp;своих будущих преподавателей
           </p>
         </div>
-        <div class="col-4 benefits__benefit benefit benefit_horn">
+        <div class="col-sm-4 col-12 benefits__benefit benefit benefit_horn">
           <p class="benefit__text">
             Значимость этих проблем очевидна, поэтому стоит всегда быть внимательным
           </p>
@@ -81,7 +83,7 @@
     <div class="container">
       <h2 class="teachers__title">Преподаватели курсов</h2>
       <div class="row teachers__wrapper">
-        <div class="col teachers__card teacher-card">
+        <div class="col-lg-3 col-sm-6 col teachers__card teacher-card">
           <picture class="teacher-card__image">
             <source media="(max-width: 1200px)" srcset="assets/images/teachers/1-petrov/petrov-768-1x.webp 1x, assets/images/teachers/1-petrov/petrov-768-2x.webp 2x" type="image/webp">
             <source media="(max-width: 1200px)" srcset="assets/images/teachers/1-petrov/petrov-768-1x.jpg 1x, assets/images/teachers/1-petrov/petrov-768-2x.jpg 2x" type="image/jpg">
@@ -91,11 +93,11 @@
           <div class="teacher-card__text-content">
             <h3 class="teacher-card__title">Владимир Петров</h3>
             <p class="teacher-card__description">
-              Лишь непосредственные участники технического прогресса неоднозначны и&nbsp;будут в&nbsp;равной степени предоставлены сами себе.
+              Лишь непосредственные участники технического прогресса неоднозначны и будут в&nbsp;равной степени предоставлены сами себе.
             </p>
           </div>
         </div>
-        <div class="col teachers__card teacher-card">
+        <div class="col-lg-3 col-sm-6 col teachers__card teacher-card">
           <picture class="teacher-card__image">
             <source media="(max-width: 1200px)" srcset="assets/images/teachers/2-sergeev/sergeev-768-1x.webp 1x, assets/images/teachers/2-sergeev/sergeev-768-2x.webp 2x" type="image/webp">
             <source media="(max-width: 1200px)" srcset="assets/images/teachers/2-sergeev/sergeev-768-1x.jpg 1x, assets/images/teachers/2-sergeev/sergeev-768-2x.jpg 2x" type="image/jpg">
@@ -109,7 +111,7 @@
             </p>
           </div>
         </div>
-        <div class="col teachers__card teacher-card">
+        <div class="col-lg-3 col-sm-6 col teachers__card teacher-card">
           <picture class="teacher-card__image">
             <source media="(max-width: 1200px)" srcset="assets/images/teachers/3-andreev/andreev-768-1x.webp 1x, assets/images/teachers/3-andreev/andreev-768-2x.webp 2x" type="image/webp">
             <source media="(max-width: 1200px)" srcset="assets/images/teachers/3-andreev/andreev-768-1x.jpg 1x, assets/images/teachers/3-andreev/andreev-768-2x.jpg 2x" type="image/jpg">
@@ -123,7 +125,7 @@
             </p>
           </div>
         </div>
-        <div class="col teachers__card teacher-card">
+        <div class="col-lg-3 col-sm-6 col teachers__card teacher-card">
           <picture class="teacher-card__image">
             <source media="(max-width: 1200px)" srcset="assets/images/teachers/4-dmitriev/dmitriev-768-1x.webp 1x, assets/images/teachers/4-dmitriev/dmitriev-768-2x.webp 2x" type="image/webp">
             <source media="(max-width: 1200px)" srcset="assets/images/teachers/4-dmitriev/dmitriev-768-1x.jpg 1x, assets/images/teachers/4-dmitriev/dmitriev-768-2x.jpg 2x" type="image/jpg">
@@ -144,11 +146,14 @@
     <div class="container">
       <h2 class="courses__title">Курсы</h2>
       <div class="row courses__wrapper">
-        <div class="col courses courses-card">
-          <div class="courses-card__image courses-card__image_cinema">
-            <picture class="courses-card__picture">
-              <source srcset="./assets/images/courses/cinema/cinema-1x.webp 1x, ./assets/images/courses/cinema/cinema-2x.webp 2x">
-              <img alt="Изображение курса Cinema 4d для начинающих" src="./assets/images/courses/cinema/cinema-1x.jpg" srcset="./assets/images/courses/cinema/cinema-1x.jpg 1x, ./assets/images/courses/cinema/cinema-2x.jpg 2x">
+        <div class="col-sm-6 col courses__course-card course-card">
+          <div class="course-card__image course-card__image_cinema">
+            <picture class="course-card__picture">
+              <source media="(min-width: 768px)" srcset="./assets/images/courses/cinema/cinema-768-1x.webp 1x, ./assets/images/courses/cinema/cinema-768-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="./assets/images/courses/cinema/cinema-768-1x.jpg 1x, ./assets/images/courses/cinema/cinema-768-2x.jpg 2x" type="image/jpg">
+              <source media="(min-width: 992px)" srcset="./assets/images/courses/cinema/cinema-1x.webp 1x, ./assets/images/courses/cinema/cinema-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 992px)" srcset="./assets/images/courses/cinema/cinema-1x.jpg 1x, ./assets/images/courses/cinema/cinema-2x.jpg 2x" type="image/jpg">
+              <img alt="Изображение курса Cinema 4d для начинающих" src="./assets/images/courses/cinema/cinema-1x.jpg">
             </picture>
             <div class="course-card__timing">60 часов</div>
           </div>
@@ -156,17 +161,20 @@
             <div class="course-card__text">
               <h3 class="course-card__title">Cinema 4d для начинающих</h3>
               <p class="course-card__description">
-                Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит от&nbsp;системы массового участия. Следует отметить, что сложившаяся структура организации напрямую зависит от&nbsp;стандартных подходов.
+                Учитывая ключевые сценарии поведения, базовый вектор развития напрямую зависит&nbsp;от системы массового участия. Следует отметить, что сложившаяся структура организации напрямую зависит&nbsp;от стандартных подходов.
               </p>
             </div>
             <a class="course-card__button button button_small" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="col courses courses-card">
-          <div class="courses-card__image">
-            <picture class="courses-card__picture">
-              <source srcset="./assets/images/courses/blender/blender-1x.webp 1x, ./assets/images/courses/blender/blender-2x.webp 2x">
-              <img alt="Изображение курса Blender: продвинутый уровень" src="./assets/images/courses/blender/blender-1x.jpg" srcset="./assets/images/courses/blender/blender-1x.jpg 1x, ./assets/images/courses/blender/blender-2x.jpg 2x">
+        <div class="col-sm-6 col courses__course-card course-card course-card_blender">
+          <div class="course-card__image">
+            <picture class="course-card__picture">
+              <source media="(min-width: 768px)" srcset="./assets/images/courses/blender/blender-768-1x.webp 1x, ./assets/images/courses/blender/blender-768-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="./assets/images/courses/blender/blender-768-1x.jpg 1x, ./assets/images/courses/blender/blender-768-2x.jpg 2x" type="image/jpg">
+              <source media="(min-width: 992px)" srcset="./assets/images/courses/blender/blender-1x.webp 1x, ./assets/images/courses/blender/blender-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 992px)" srcset="./assets/images/courses/blender/blender-1x.jpg 1x, ./assets/images/courses/blender/blender-2x.jpg 2x" type="image/jpg">
+              <img alt="Изображение курса Blender: продвинутый уровень" src="./assets/images/courses/blender/blender-1x.jpg">
             </picture>
             <div class="course-card__timing">40 часов</div>
           </div>
@@ -180,11 +188,14 @@
             <a class="course-card__button button button_small" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="col courses courses-card">
-          <div class="courses-card__image">
-            <picture class="courses-card__picture">
-              <source srcset="./assets/images/courses/3ds-max/3ds-max-1x.webp 1x, ./assets/images/courses/3ds-max/3ds-max-2x.webp 2x">
-              <img alt="Изображение курса Blender: продвинутый уровень" src="./assets/images/courses/3ds-max/3ds-max-1x.jpg" srcset="./assets/images/courses/3ds-max/3ds-max-1x.jpg 1x, ./assets/images/courses/3ds-max/3ds-max-2x.jpg 2x">
+        <div class="col-sm-6 col courses__course-card course-card">
+          <div class="course-card__image">
+            <picture class="course-card__picture">
+              <source media="(min-width: 768px)" srcset="./assets/images/courses/3ds-max/3ds-max-768-1x.webp 1x, ./assets/images/courses/3ds-max/3ds-max-768-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="./assets/images/courses/3ds-max/3ds-max-768-1x.jpg 1x, ./assets/images/courses/3ds-max/3ds-max-768-2x.jpg 2x" type="image/jpg">
+              <source media="(min-width: 992px)" srcset="./assets/images/courses/3ds-max/3ds-max-1x.webp 1x, ./assets/images/courses/3ds-max/3ds-max-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 992px)" srcset="./assets/images/courses/3ds-max/3ds-max-1x.jpg 1x, ./assets/images/courses/3ds-max/3ds-max-2x.jpg 2x" type="image/jpg">
+              <img alt="Изображение курса Blender: продвинутый уровень" src="./assets/images/courses/3ds-max/3ds-max-1x.jpg">
             </picture>
             <div class="course-card__timing">40 часов</div>
           </div>
@@ -198,11 +209,14 @@
             <a class="course-card__button button button_small" href="#">Подробнее</a>
           </div>
         </div>
-        <div class="col courses courses-card">
-          <div class="courses-card__image">
-            <picture class="courses-card__picture">
-              <source srcset="./assets/images/courses/zbrush/zbrush-1x.webp 1x, ./assets/images/courses/zbrush/zbrush-2x.webp 2x">
-              <img alt="Изображение курса Скульптинг в ZBrush" src="./assets/images/courses/zbrush/zbrush-1x.jpg" srcset="./assets/images/courses/zbrush/zbrush-1x.jpg 1x, ./assets/images/courses/zbrush/zbrush-2x.jpg 2x">
+        <div class="col-sm-6 col courses__course-card course-card">
+          <div class="course-card__image">
+            <picture class="course-card__picture">
+              <source media="(min-width: 768px)" srcset="./assets/images/courses/zbrush/zbrush-768-1x.webp 1x, ./assets/images/courses/zbrush/zbrush-768-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="./assets/images/courses/zbrush/zbrush-768-1x.jpg 1x, ./assets/images/courses/zbrush/zbrush-768-2x.jpg 2x" type="image/jpg">
+              <source media="(min-width: 992px)" srcset="./assets/images/courses/zbrush/zbrush-1x.webp 1x, ./assets/images/courses/zbrush/zbrush-2x.webp 2x" type="image/webp">
+              <source media="(min-width: 992px)" srcset="./assets/images/courses/zbrush/zbrush-1x.jpg 1x, ./assets/images/courses/zbrush/zbrush-2x.jpg 2x" type="image/jpg">
+              <img alt="Изображение курса Скульптинг в ZBrush" src="./assets/images/courses/zbrush/zbrush-1x.jpg">
             </picture>
             <div class="course-card__timing">80 часов</div>
           </div>
