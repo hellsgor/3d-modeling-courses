@@ -24,5 +24,6 @@
   --light-font-color: #85859b;
 
   /* gradients */
-  --black-background-gradient: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+  --black-background-gradient-desktop: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+  --black-background-gradient-mobile: radial-gradient(49% 49% at 67.78% 84.57%, #555681 0%, #2e2b44 100%);
 }

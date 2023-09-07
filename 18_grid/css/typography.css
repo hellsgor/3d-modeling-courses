@@ -18,26 +18,26 @@ h3,
 }
 
 h1,
-h2,
-.heading-1,
-.heading-2 {
+.heading-1 {
+  font-size: 30px;
   line-height: 100%;
 }
 
 h2,
 .heading-2 {
-  font-size: 40px;
+  font-size: 20px;
+  line-height: 130%;
 }
 
 h3,
 .heading-3 {
   font-size: 18px;
+  line-height: 150%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   h1,
   heading-1 {
-    margin-bottom: 16px;
     font-size: 50px;
   }
 }

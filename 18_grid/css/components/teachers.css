@@ -1,20 +1,18 @@
 @import url(./teacher-card.css);
 
 section.teachers {
-  padding-bottom: 73px;
+  padding-top: 44px;
+  padding-bottom: 47px;
   background-color: var(--black-background-color);
 }
 
 .teachers__title {
   margin-bottom: 23px;
-  font-size: 37px;
-  line-height: 40px;
-  letter-spacing: 1.7px;
   color: var(--default-light-color);
 }
 
 .teachers__wrapper {
-  row-gap: 0;
+  row-gap: 22px;
 }
 
 @media (min-width: 768px) {

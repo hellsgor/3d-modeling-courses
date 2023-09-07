@@ -1,11 +1,13 @@
 .teacher-card {
   display: flex;
   flex-direction: column;
+  row-gap: 31px;
 }
 
 .teacher-card__image {
   display: block;
   overflow: hidden;
+  height: 180px;
   border-top-left-radius: var(--default-radius);
   border-top-right-radius: var(--default-radius);
 }
@@ -15,10 +17,7 @@
 }
 
 .teacher-card__title {
-  max-width: 254px;
   margin-bottom: 8px;
-  font-size: 18px;
-  line-height: 150%;
   color: var(--default-light-color);
 }
 

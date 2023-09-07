@@ -1,9 +1,9 @@
 .button {
   display: block;
   width: fit-content;
-  padding: 24px 76px;
+  padding: 20px 54px;
   border-radius: var(--default-radius);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: normal;
   background-color: var(--accent-color);
