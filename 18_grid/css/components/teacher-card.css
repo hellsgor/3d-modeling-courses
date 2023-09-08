@@ -5,7 +5,9 @@
 }
 
 .teacher-card__image {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   height: 180px;
   border-top-left-radius: var(--default-radius);
