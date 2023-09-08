@@ -11,14 +11,12 @@ body {
 h1,
 h2,
 h3,
-.heading-1,
 .heading-2,
 .heading-3 {
   font-weight: 700;
 }
 
-h1,
-.heading-1 {
+h1 {
   font-size: 30px;
   line-height: 100%;
 }
@@ -49,8 +47,7 @@ h3,
 }
 
 @media (min-width: 992px) {
-  h1,
-  .heading-1 {
+  h1 {
     margin-bottom: var(--default-headings-indent);
   }
 }
